@@ -1,0 +1,29 @@
+.md-typeset div.arithmatex  {
+    overflow: initial;
+}
+
+.md-typeset .admonition {
+    font-size: 0.8rem;
+}
+
+.md-typeset details {
+    font-size: 0.8rem;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
