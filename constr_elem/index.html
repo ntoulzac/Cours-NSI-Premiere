@@ -237,9 +237,115 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Constructions élémentaires
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Constructions élémentaires
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-variables-affectations-et-sequences-dinstructions" class="md-nav__link">
+    Partie A - Variables, affectations et séquences d'instructions
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - Variables, affectations et séquences d'instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequences-dinstructions" class="md-nav__link">
+    Séquences d'instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tutor-magic" class="md-nav__link">
+    Tutor Magic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-conditions-et-boucles" class="md-nav__link">
+    Partie B - Conditions et boucles
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie B - Conditions et boucles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructions-conditionnelles" class="md-nav__link">
+    Instructions conditionnelles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucle-bornee-boucle-pour" class="md-nav__link">
+    Boucle bornée (boucle pour)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucle-non-bornee-boucle-tant-que" class="md-nav__link">
+    Boucle non bornée (boucle tant que)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-exercices-et-activites" class="md-nav__link">
+    Partie C - Exercices et activités
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -382,15 +488,419 @@
 
 
 <h1 id="chapitre-1-constructions-elementaires">Chapitre 1 : Constructions élémentaires<a class="headerlink" href="#chapitre-1-constructions-elementaires" title="Permanent link">⚓︎</a></h1>
-<p>Page en construction...</p>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees.ipynb">(énoncé)</a></p>
+<details class="activité">
+<summary>Activité 1-1 : Prise en main de <em>Jupyter</em></summary>
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Savoir exécuter une cellule de carnet <em>Jupyter</em>.</li>
+<li>Faire la différence entre une <strong>expression</strong> et une <strong>instruction</strong>.</li>
+</ul>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/1-01_act_prise_en_main_jupyter.ipynb">ici</a></p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees_corrigé.ipynb">(corrigé)</a></p>
+</details>
+<h2 id="partie-a-variables-affectations-et-sequences-dinstructions">Partie A - Variables, affectations et séquences d'instructions<a class="headerlink" href="#partie-a-variables-affectations-et-sequences-dinstructions" title="Permanent link">⚓︎</a></h2>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">⚓︎</a></h3>
+<p>Une <strong>variable</strong> est une référence à une zone de la mémoire de l'ordinateur dans laquelle est stockée une <strong>valeur</strong>.</p>
+<p>Pour attribuer une valeur à une variable ou pour modifier sa valeur, on réalise une <strong>affectation</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div></td></tr></table></div>
+<p>Une variable appelée <code>x</code> a été définie, et la valeur <code>0</code> a été stockée dans la variable grâce à une affectation, notée <code>=</code> en Python.</p>
+<p>Pour afficher à l'écran la valeur de la variable <code>x</code>, on utilise la fonction <code>print</code>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition beware">
+<p class="admonition-title">Attention aux noms de variables choisis</p>
+<p>Le <strong>nom d'une variable</strong> doit être choisi de sorte que l'on comprenne rapidement le rôle de cette variable.</p>
+<p>Le nom peut contenir des lettres, des chiffres et certains caractères spéciaux. Il doit commencer par une lettre minuscule.</p>
+<p>De plus, certains mots-clés du langage Python ne peuvent pas être utilisés comme nom de variable.</p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+<h3 id="sequences-dinstructions">Séquences d'instructions<a class="headerlink" href="#sequences-dinstructions" title="Permanent link">⚓︎</a></h3>
+<p>Le langage de programmation Python est un langage de <strong>programmation impérative</strong>. Cela signifie que les instructions sont exécutées les unes après les autres, dans l'ordre.</p>
+<p>Considérons par exemple la séquence d'instructions suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">note</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">note</span>
+<span class="n">note</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">note</span>
+<span class="n">note</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">note</span>
+<span class="n">moyenne</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="mi">3</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>
+<p>Ligne <code>1</code> : On définit une variable <code>total</code> en lui affectant la valeur <code>0</code>. Cette étape s'appelle l'<strong>initialisation</strong> de la variable.</p>
+</li>
+<li>
+<p>Ligne <code>2</code> : On initialise une variable <code>note</code> en lui affectant la valeur <code>13</code>.</p>
+</li>
+<li>
+<p>Ligne <code>3</code> : On calcule d'abord la somme de la valeur de <code>total</code> (<code>0</code>) et de la valeur de <code>note</code> (<code>13</code>). On affecte ensuite le résultat (<code>13</code>) à la variable <code>total</code>. L'ancienne valeur de <code>total</code> (<code>0</code>) est écrasée par sa nouvelle valeur (<code>13</code>).</p>
+</li>
+<li>
+<p>Ligne <code>4</code> : Une nouvelle valeur est affectée à la variable <code>note</code>. L'ancienne valeur de <code>note</code> (<code>13</code>) est écrasée par sa nouvelle valeur (<code>15</code>).</p>
+</li>
+<li>
+<p>Etc.</p>
+</li>
+</ul>
+<details class="important">
+<summary>Suivi de l'évolution de la valeur de variables</summary>
+<p>On peut représenter par un tableau les valeurs successives des variables au fur et à mesure de l'exécution des lignes de code.</p>
+<p>Par exemple, pour le programme ci-dessus, voici le tableau obtenu :</p>
+<table>
+<thead>
+<tr>
+<th align="center">Ligne</th>
+<th align="center"><code>total</code></th>
+<th align="center"><code>note</code></th>
+<th align="center"><code>moyenne</code></th>
+<th align="center">Remarque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center"><code>0</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">La variable <code>total</code> est initialisée.</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center"><code>0</code></td>
+<td align="center"><code>13</code></td>
+<td align="center"></td>
+<td align="center">La variable <code>`note</code> est initialisée.</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center"><code>13</code></td>
+<td align="center"><code>13</code></td>
+<td align="center"></td>
+<td align="center">La valeur de <code>total</code> est écrasée et remplacée par une nouvelle valeur.</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center"><code>13</code></td>
+<td align="center"><code>15</code></td>
+<td align="center"></td>
+<td align="center">La valeur de <code>note</code> est écrasée et remplacée par une nouvelle valeur.</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center"><code>28</code></td>
+<td align="center"><code>15</code></td>
+<td align="center"></td>
+<td align="center">La valeur de <code>total</code> est écrasée et remplacée par une nouvelle valeur.</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center"><code>28</code></td>
+<td align="center"><code>8</code></td>
+<td align="center"></td>
+<td align="center">La valeur de <code>note</code> est écrasée et remplacée par une nouvelle valeur.</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center"><code>36</code></td>
+<td align="center"><code>8</code></td>
+<td align="center"></td>
+<td align="center">La valeur de <code>total</code> est écrasée et remplacée par une nouvelle valeur.</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center"><code>36</code></td>
+<td align="center"><code>8</code></td>
+<td align="center"><code>12.0</code></td>
+<td align="center">La variable <code>moyenne</code> est initialisée.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="exo">
+<summary>Exercice 1-2 : Suivi de l'évolution de la valeur de variables</summary>
+<p><strong>Objectif :</strong> À l'aide d'un tableau de valeurs, suivre l'évolution de la valeur de plusieurs variables au cours de l'exécution d'une séquence d'affectations.</p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p><strong>1.</strong> Représenter sous forme de tableau les valeurs successives des variables lors de l'exécution de la séquence d'instructions suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>2.</strong> Quel effet est produit par l'exécution des lignes <code>3</code> à <code>5</code> ?</p>
+</div>
+</details>
+<h3 id="tutor-magic"><em>Tutor Magic</em><a class="headerlink" href="#tutor-magic" title="Permanent link">⚓︎</a></h3>
+<p><em>Tutor Magic</em> est un outil qui permet, dans un carnet <em>Jupyter</em>, de suivre pas à pas la valeur des variables pendant l'exécution d'une séquence d'instructions.</p>
+<p>Il faut commencer par charger <em>Tutor Magic</em> en exécutant la commande suivante dans une cellule du carnet :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">%</span><span class="n">load_ext</span> <span class="n">tutormagic</span>
+</code></pre></div></td></tr></table></div>
+<p>Il suffit ensuite d'ajouter la ligne suivante au dessus de la séquence d'instructions à étudier :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">%%</span><span class="n">tutor</span> <span class="o">--</span><span class="n">lang</span> <span class="n">python3</span> <span class="o">--</span><span class="n">heapPrimitives</span>
+</code></pre></div></td></tr></table></div>
+<p>Voici le résultat obtenu :</p>
+<p><center><iframe style="margin: 0em;" src="https://pythontutor.com/iframe-embed.html#code=total%20%3D%200%0Anote%20%3D%2013%0Atotal%20%3D%20total%20%2B%20note%0Anote%20%3D%2015%0Atotal%20%3D%20total%20%2B%20note%0Anote%20%3D%208%0Atotal%20%3D%20total%20%2B%20note%0Amoyenne%20%3D%20total%20/%203%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=true&textReferences=false&curInstr=0&&verticalStack=false&py=3&rawInputLstJSON=%5B%5D&codeDivWidth=50%25&codeDivHeight=100%25" width="800" height="450"></iframe></center></p>
+<details class="activité">
+<summary>Activité 1-3 : Utilisation de <em>Tutor Magic</em></summary>
+<p>Le carnet suivant montre un exemple d'utilisation de l'outil <em>Tutor Magic</em>.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/1-03_act_tutor_magic.ipynb">ici</a></p>
+</div>
+</details>
+<h2 id="partie-b-conditions-et-boucles">Partie B - Conditions et boucles<a class="headerlink" href="#partie-b-conditions-et-boucles" title="Permanent link">⚓︎</a></h2>
+<p>Comme tous les langages de programmation impératifs, Python dispose d'un ensemble de structures qui permettent d'exécuter des instructions de manière répétée ou lorsqu'un certain test est réussi. </p>
+<h3 id="instructions-conditionnelles">Instructions conditionnelles<a class="headerlink" href="#instructions-conditionnelles" title="Permanent link">⚓︎</a></h3>
+<p>On utilise une <strong>condition</strong>, ou <strong>instruction conditionnelle</strong>, lorsque les instructions à exécuter dépendent du résultat (<code>Vrai</code> ou <code>Faux</code>) d'un certain test.</p>
+<p>Par exemple, si la valeur de la variable <code>moyenne</code> est strictement inférieure à <code>10</code>, on souhaite afficher à l'écran le message <code>"Échec"</code>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">moyenne</span> <span class="o">=</span> <span class="mf">9.6</span>
+<span class="k">if</span> <span class="n">moyenne</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Échec&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>La condition est introduite par le mot-clé <code>if</code>, qui est directement suivi par le test à effectuer. La ligne se termine par <code>:</code>.</p>
+<p>Le test consiste à vérifier si oui ou non la valeur de la variable <code>moyenne</code> est strictement inférieure à <code>10</code>.</p>
+<ul>
+<li>
+<p>Dans le cas où c'est vrai (<code>True</code> en Python), on exécute l'instruction <code>print("Échec")</code>, qui provoque l'affichage demandé à l'écran.</p>
+</li>
+<li>
+<p>Dans le cas où c'est faux (<code>False</code> en Python), l'instruction <code>print("Échec")</code> n'est pas exécutée, et rien ne s'affiche à l'écran.</p>
+</li>
+</ul>
+<div class="admonition beware">
+<p class="admonition-title">Attention à la virgule mathématique en Python</p>
+<p>La virgule mathématique est notée par un <code>.</code> en Python. C'est la notation anglo-saxonne.</p>
+</div>
+<p>On souhaite désormais que, dans le cas où la valeur de <code>moyenne</code> est strictement inférieure à <code>10</code>, le message "Échec" s'affiche à l'écran mais que, dans le cas contraire, le message "Succès" s'affiche.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">moyenne</span> <span class="o">=</span> <span class="mf">9.6</span>
+<span class="k">if</span> <span class="n">moyenne</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Échec&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Succès&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Le mot-clé <code>else</code>, suivi de <code>:</code>, permet d'indiquer quelles sont les instructions à exécuter dans le cas où le test est faux.</p>
+<p>On peut remarquer que, dans les exemples précédents, les instructions <code>print("Échec")</code> et <code>print("Succès")</code> sont décalées horizontalement de quatre espaces vers la droite. On parle d'<strong>indentation</strong>. C'est un concept fondamental du langage Python, qu'on ne retrouve pas dans la grande majorité des autres langages de programmation.</p>
+<p>L'indentation est utilisée pour signaler précisement le début et la fin des séquences d'instructions qui doivent être exécutées.</p>
+<div class="admonition info">
+<p class="admonition-title">Opérateurs de comparaison</p>
+<p>Pour l'écriture des tests, on aura régulièrement recours aux opérateurs mathématiques de comparaison :</p>
+<ul>
+<li><code>==</code> est égal à,</li>
+<li><code>!=</code> n'est pas égal à,</li>
+<li><code>&lt;</code> est strictement inférieur à,</li>
+<li><code>&gt;</code> est strictement supérieur à,</li>
+<li><code>&lt;=</code> est inférieur ou égal à,</li>
+<li><code>&gt;=</code> est supérieur ou égal à.</li>
+</ul>
+</div>
+<details class="exo">
+<summary>Exercice 1-4 : Instructions conditionnelles</summary>
+<p><strong>Objectif :</strong> Écrire des instructions conditionnelles.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/1-04_ex_instructions_conditionnelles.ipynb">ici</a></p>
+</div>
+</details>
+<h3 id="boucle-bornee-boucle-pour">Boucle bornée (boucle pour)<a class="headerlink" href="#boucle-bornee-boucle-pour" title="Permanent link">⚓︎</a></h3>
+<p>Lorsque l'on souhaite exécuter plusieurs fois de suite une même séquence d'instructions, et que l'<strong>on connait <em>a priori</em> le nombre de répétitions souhaitées</strong>, on utilise une boucle bornée.</p>
+<p>Par exemple, si on exécute la séquence d'instructions suivantes :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">carre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">*</span> <span class="n">nombre</span>
+    <span class="n">cube</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">*</span> <span class="n">nombre</span> <span class="o">*</span> <span class="n">nombre</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Le carré du nombre&quot;</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">&quot;est&quot;</span><span class="p">,</span> <span class="n">carre</span><span class="p">,</span> <span class="s2">&quot;et son cube est&quot;</span><span class="p">,</span> <span class="n">cube</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Exécution terminée&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>alors l'affichage obtenu est :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Le carré du nombre 0 est 0 et son cube est 0
+Le carré du nombre 1 est 1 et son cube est 1
+Le carré du nombre 2 est 4 et son cube est 8
+Le carré du nombre 3 est 9 et son cube est 27
+Le carré du nombre 4 est 16 et son cube est 64
+Le carré du nombre 5 est 25 et son cube est 125
+Le carré du nombre 6 est 36 et son cube est 216
+Le carré du nombre 7 est 49 et son cube est 343
+Le carré du nombre 8 est 64 et son cube est 512
+Le carré du nombre 9 est 81 et son cube est 729
+Exécution terminée
+</code></pre></div></td></tr></table></div>
+<p>La <strong>boucle pour</strong> est introduite par le mot-clé <code>for</code> et la première ligne se termine par <code>:</code>.</p>
+<p>Sur les lignes <code>2</code> à <code>4</code> est écrite la séquence d'instructions à exécuter plusieurs fois. Elle est indentée.</p>
+<p>La ligne <code>5</code>, qui n'est pas indentée, ne fait pas partie de la séquence d'instructions à répéter. Elle n'est donc exécutée qu'une seule fois, après la fin de la boucle pour.</p>
+<details class="important">
+<summary>Visualisation à l'aide de <em>Tutor Magic</em></summary>
+<p><iframe style="margin: 0em;" src="https://pythontutor.com/iframe-embed.html#code=for%20nombre%20in%20range%2810%29%3A%0A%20%20%20%20carre%20%3D%20nombre%20%2A%20nombre%0A%20%20%20%20cube%20%3D%20nombre%20%2A%20nombre%20%2A%20nombre%0A%20%20%20%20print%28%22Le%20carr%C3%A9%20du%20nombre%22%2C%20nombre%2C%20%22est%22%2C%20carre%2C%20%22%3B%20son%20cube%20est%22%2C%20cube%29%0Aprint%28%22Ex%C3%A9cution%20termin%C3%A9e%22%29%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=true&textReferences=false&curInstr=0&&verticalStack=false&py=3&rawInputLstJSON=%5B%5D&codeDivWidth=50%25&codeDivHeight=100%25" width="950" height="380"></iframe></p>
+</details>
+<div class="admonition info">
+<p class="admonition-title">À propos de l'expression <code>range(10)</code></p>
+<p>L'expression <code>range(10)</code> permet de préciser qu'on souhaite dix répétitions, pour tous les entiers <code>nombre</code> allant de <code>0</code> à <code>9</code>.</p>
+<p>Lorsque la séquence d'instructions est exécutée pour la première fois, la variable <code>nombre</code> a pour valeur <code>0</code>.</p>
+<p>Ensuite, la même séquence d'instructions est exécutée à nouveau, mais cette fois la variable <code>nombre</code> a pour valeur <code>1</code>.</p>
+<p>La séquence est ensuite exécutée alors que la variable <code>nombre</code> a pour valeur <code>2</code>, puis <code>3</code>, puis <code>4</code>, etc. jusqu'à <code>9</code>.</p>
+</div>
+<details class="exo">
+<summary>Exercice 1-5 : Différentes utilisations de <code>range</code></summary>
+<p><strong>Objectif :</strong> Comprendre comment s'utilise <code>range</code> dans l'écriture d'une boucle pour.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/1-05_ex_range.ipynb">ici</a></p>
+</div>
+</details>
+<details class="exo">
+<summary>Exercice 1-6 : Boucles bornées</summary>
+<p><strong>Objectif :</strong> Écrire des boucles bornées.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/1-06_ex_boucles_pour.ipynb">ici</a></p>
+</div>
+</details>
+<h3 id="boucle-non-bornee-boucle-tant-que">Boucle non bornée (boucle tant que)<a class="headerlink" href="#boucle-non-bornee-boucle-tant-que" title="Permanent link">⚓︎</a></h3>
+<p>Lorsque l'on souhaite exécuter plusieurs fois de suite une même séquence d'instructions, et que l'<strong>on ne connait pas <em>a priori</em> le nombre de répétitions souhaitées</strong>, on utilise une boucle non bornée.</p>
+<p>Par exemple, si on exécute la séquence d'instructions suivantes :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">nombre</span> <span class="o">&lt;</span> <span class="mi">2000000</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+    <span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">*</span> <span class="mi">16</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Exécution terminée&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>alors l'affichage obtenu est :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>1
+16
+256
+4096
+65536
+1048576
+Exécution terminée
+</code></pre></div></td></tr></table></div>
+<p>La <strong>boucle tant que</strong> est introduite par le mot-clé <code>while</code>, suivi d'une <strong>condition</strong> qui doit être vraie pour que la séquence d'instructions s'exécute. La première ligne se termine par <code>:</code>.</p>
+<p>Sur les lignes <code>2</code> et <code>3</code> est écrite la séquence d'instructions à exécuter plusieurs fois, et elle est indentée.</p>
+<p>La ligne <code>4</code>, qui n'est pas indentée, ne fait pas partie de la séquence d'instructions à répéter. Elle n'est donc exécutée qu'une seule fois, après la fin de la boucle tant que.</p>
+<details class="important">
+<summary>Visualisation à l'aide de <em>Tutor Magic</em></summary>
+<p><iframe style="margin: 0em;" src="https://pythontutor.com/iframe-embed.html#code=nombre%20%3D%201%0Awhile%20nombre%20%3C%202000000%3A%0A%20%20%20%20print%28nombre%29%0A%20%20%20%20nombre%20%3D%20nombre%20%2A%2016%0Aprint%28%22Ex%C3%A9cution%20termin%C3%A9e%22%29%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=true&textReferences=false&curInstr=0&&verticalStack=false&py=3&rawInputLstJSON=%5B%5D&codeDivWidth=50%25&codeDivHeight=100%25" width="950" height="380"></iframe></p>
+</details>
+<div class="admonition beware">
+<p class="admonition-title">Attention aux boucles infinies</p>
+<p>Il faut s'assurer que la condition qui définit la boucle tant que devient fausse à un moment donné. Dans le cas contraire, on parle de <strong>boucle infinie</strong>, et le programme ne fonctionne pas car on ne sort jamais de la boucle.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">nombre</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># ATTENTION : BOUCLE INFINIE !</span>
+    <span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Exécution terminée&quot;</span><span class="p">)</span> <span class="c1"># Cette ligne ne sera jamais exécutée</span>
+</code></pre></div></td></tr></table></div>
+<p>La variable <code>nombre</code> est initialisée à <code>1</code> et elle augmente ensuite d'une unité lors de chaque passage dans la boucle. Elle ne sera donc jamais égale à <code>0</code> et la boucle ne s'arrêtera donc jamais.</p>
+</div>
+<details class="exo">
+<summary>Exercice 1-7 : Boucles non bornées</summary>
+<p><strong>Objectif :</strong> Écrire des boucles non bornées.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/1-07_ex_boucles_tant_que.ipynb">ici</a></p>
+</div>
+</details>
+<h2 id="partie-c-exercices-et-activites">Partie C - Exercices et activités<a class="headerlink" href="#partie-c-exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<div class="admonition exo">
+<p class="admonition-title">Exercices 1-8 à 1-13</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Exercice 1-8</label><label for="__tabbed_1_2">Exercice 1-9</label><label for="__tabbed_1_3">Exercice 1-10</label><label for="__tabbed_1_4">Exercice 1-11</label><label for="__tabbed_1_5">Exercice 1-12</label><label for="__tabbed_1_6">Exercice 1-13</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition activité">
+<p class="admonition-title">Activités 1-14 à 1-16</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Activité 1-14 : Le jeu du nombre mystère</label><label for="__tabbed_2_2">Activité 1-15</label><label for="__tabbed_2_3">Activité 1-16</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Utiliser des instructions conditionnelles et des boucles.</li>
+<li>Découvrir la fonction permettant de tirer aléatoirement un nombre entier.</li>
+</ul>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/act_jeu_nombre_mystere.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+<div class="tabbed-block">
+<p>xxxx</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Modifier et exécuter des cellules dans un carnet <em>Jupyter</em>.</li>
+<li>Écrire une instruction conditionnelle.</li>
+<li>Écrire une boucle bornée de la forme <code>for variable in range(nb_repetitions):</code>.</li>
+<li>Écrire une boucle non bornée...</li>
+<li>... mais pas une boucle infinie.</li>
+<li>Utiliser correctement l'indentation pour définir les séquences d'instructions.</li>
+<li>Être capable de suivre la valeur d'une variable au cours de l'exécution d'une séquence d'instructions, à la main ou à l'aide de <em>Tutor Magic</em>.</li>
+<li>Faire un affichage à l'écran avec la fonction <code>print</code>.</li>
+<li>Tirer un nombre entier au hasard avec la fonction <code>randint</code>.</li>
+<li>Demander à l'utilisateur de saisir un entier au clavier avec la commande <code>int(input())</code>.</li>
+<li>Connaître la différence entre les expressions <code>range(a)</code>, <code>range(a, b)</code> et <code>range(a, b, c)</code>.</li>
+</ul>
 
 
 
