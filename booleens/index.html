@@ -72,7 +72,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
   
     
     
@@ -128,7 +128,7 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
       </form>
@@ -252,9 +252,94 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Booléens
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Booléens
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-valeurs-variables-et-expressions-booleennes" class="md-nav__link">
+    Partie A - Valeurs, variables et expressions booléennes
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - Valeurs, variables et expressions booléennes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions-et-premiers-exemples" class="md-nav__link">
+    Définitions et premiers exemples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-operateurs-logiques-et-tables-de-verite" class="md-nav__link">
+    Partie B - Opérateurs logiques et tables de vérité
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie B - Opérateurs logiques et tables de vérité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operateurs-logiques-non-et-ou-xor" class="md-nav__link">
+    Opérateurs logiques non, et, ou, xor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables-de-verite" class="md-nav__link">
+    Tables de vérité
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-exercices-et-activites" class="md-nav__link">
+    Partie C - Exercices et activités
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -382,15 +467,190 @@
 
 
 <h1 id="chapitre-2-booleens">Chapitre 2 : Booléens<a class="headerlink" href="#chapitre-2-booleens" title="Permanent link">⚓︎</a></h1>
-<p>Page en construction...</p>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees.ipynb">(énoncé)</a></p>
+<h2 id="partie-a-valeurs-variables-et-expressions-booleennes">Partie A - Valeurs, variables et expressions booléennes<a class="headerlink" href="#partie-a-valeurs-variables-et-expressions-booleennes" title="Permanent link">⚓︎</a></h2>
+<h3 id="definitions-et-premiers-exemples">Définitions et premiers exemples<a class="headerlink" href="#definitions-et-premiers-exemples" title="Permanent link">⚓︎</a></h3>
+<p>Il existe deux <strong>valeurs booléennes</strong>, qui sont <code>Vrai</code> (en Python, <code>True</code> ou <code>1</code>) et <code>Faux</code> (en Python, <code>False</code> ou <code>0</code>).</p>
+<p>Une <strong>variable booléenne</strong> est une variable dont la valeur est booléenne et une <strong>expression booléenne</strong> est une expression dont la valeur est booléenne.</p>
+<p>Les expressions booléennes apparaissent dans la définition des <strong>instructions conditionnelles</strong> (<code>if expression_booleenne:</code>) et des <strong>boucles non bornées</strong> (<code>while expression_booleenne:</code>).</p>
+<details class="exo">
+<summary>Exercice 2-01 : Variables et expressions booléennes</summary>
+<p><strong>Objectif :</strong> Repérer les variables booléennes et les expressions booléennes dans un code.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/notebooks/2-01_ex_variables_expressions_booleennes.ipynb">ici</a></p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees_corrigé.ipynb">(corrigé)</a></p>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/d50d-1763658">CAPYTALE</a></p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+</details>
+<details class="activité">
+<summary>Activité 2-02 : Conjecture de Syracuse</summary>
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Retravailler les instructions conditionnelles et les boucles.</li>
+<li>Utiliser des expressions booléennes pour étudier un problème mathématique célèbre.</li>
+</ul>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/notebooks/2-02_act_syracuse.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/a066-1763659">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-b-operateurs-logiques-et-tables-de-verite">Partie B - Opérateurs logiques et tables de vérité<a class="headerlink" href="#partie-b-operateurs-logiques-et-tables-de-verite" title="Permanent link">⚓︎</a></h2>
+<h3 id="operateurs-logiques-non-et-ou-xor">Opérateurs logiques non, et, ou, xor<a class="headerlink" href="#operateurs-logiques-non-et-ou-xor" title="Permanent link">⚓︎</a></h3>
+<p>Nous avons vu comment utiliser des expressions booléennes simples telles que <code>n == 0</code>, <code>s != 1</code>, <code>-1 &lt;= n &lt;= 2</code> ou encore <code>s % 2 == 0</code>.</p>
+<p>Mais il est parfois nécessaire d'écrire des expressions booléennes plus complexes, composées de plusieurs expressions booléennes reliées entre elles pas des <strong>opérateurs logiques</strong>. Nous utiliserons quatre opérateurs en particulier : la <strong>négation</strong> (opérateur <strong>non</strong>), la <strong>conjonction</strong> (opérateur <strong>et</strong>), la <strong>disjonction inclusive</strong> (opérateur <strong>ou</strong>) et la <strong>disjonction exclusive</strong> (opérateur <strong>xor</strong> encore appelé <em>ou exclusif</em>).</p>
+<table>
+<thead>
+<tr>
+<th align="center">Opérateur</th>
+<th align="center">Nom commun</th>
+<th align="center">Mot clé Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Négation</td>
+<td align="center">non</td>
+<td align="center"><code>not</code></td>
+</tr>
+<tr>
+<td align="center">Conjonction</td>
+<td align="center">et</td>
+<td align="center"><code>and</code></td>
+</tr>
+<tr>
+<td align="center">Disjonction inclusive</td>
+<td align="center">ou (ou inclusif)</td>
+<td align="center"><code>or</code></td>
+</tr>
+<tr>
+<td align="center">Disjonction exclusive</td>
+<td align="center">xor (ou exclusif)</td>
+<td align="center"><code>^</code></td>
+</tr>
+</tbody>
+</table>
+<details class="activité">
+<summary>Activité 2-03 : Portes logiques</summary>
+<p><a href="https://sciencedemos.org.uk/logic_gates.php">lien</a></p>
+<p><strong>Objectif :</strong> xxx</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/notebooks/2-03_act_potes_logiques.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/ffe1-1763660">CAPYTALE</a></p>
+</div>
+</details>
+<h3 id="tables-de-verite">Tables de vérité<a class="headerlink" href="#tables-de-verite" title="Permanent link">⚓︎</a></h3>
+<p>Une <strong>table de vérité</strong> est un tableau dans lequel apparait la valeur d'une expression booléenne en fonction des valeurs prises par les variables booléennes contenues dans l'expression.</p>
+<p>On donne ci-dessous la table de vérité des expressions <code>not A</code>, <code>A and B</code>, <code>A or B</code>, <code>A ^ B</code>.</p>
+<div class="admonition étoile">
+<p class="admonition-title">Table de vérité des opérateurs <code>non</code>, <code>et</code>, <code>ou</code> et <code>xor</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">non</label><label for="__tabbed_1_2">et</label><label for="__tabbed_1_3">ou</label><label for="__tabbed_1_4">xor, ou exclusif</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Table de vérité de l'opérateur non" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/table_NON.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Table de vérité de l'opérateur et" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/table_ET.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Table de vérité de l'opérateur ou" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/table_OU.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Table de vérité de l'opérateur xor" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/table_XOR.png" /></p>
+</div>
+</div>
+</div>
+</div>
+<details class="exo">
+<summary>Exercice 2-04 : Table de vérité d'expressions booléennes</summary>
+<p><strong>Objectif :</strong> Dresser la table de vérité d'une expression booléenne dépendant de deux ou trois variables booléennes.</p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p><strong>1.</strong> <code>a</code> et <code>b</code> étant deux variables booléennes, donner la table de vérité de l'expression <code>(not a) or (a and b)</code>.</p>
+<p><strong>2.</strong> <code>c</code>, <code>d</code> et <code>e</code> étant trois variables booléennes, donner la table de vérité de l'expression <code>(c or e) and (d or (not e))</code>.</p>
+</div>
+</details>
+<h2 id="partie-c-exercices-et-activites">Partie C - Exercices et activités<a class="headerlink" href="#partie-c-exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices 2-05 à 2-07</summary>
+<p><a href="https://www.lyceum.fr/1g/nsi/2-representation-des-donnees-types-et-valeurs-de-base/5-les-booleens/exo/#simplifications-dexpressions-bool%C3%A9ennes">lien</a></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Exercice 2-05 : xxx</label><label for="__tabbed_2_2">Exercice 2-06 : xxx</label><label for="__tabbed_2_3">Exercice 2-07 : xxx</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="activité">
+<summary>Activités 2-08 à 2-10</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Activité 2-08 : xxx</label><label for="__tabbed_3_2">Activité 2-09 : xxx</label><label for="__tabbed_3_3">Activité 2-10 : Jeu de rapidité <em>Boolean Game</em></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>xxx</li>
+<li>xxx</li>
+</ul>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Objectif :</strong> xxx</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Objectif :</strong> S'entraîner à manipuler les opérateurs logiques.</p>
+<div class="admonition joint">
+<p class="admonition-title">Boolean Game</p>
+<p>Pouvez-vous dépasser les 40 points au jeu <em><a href="https://booleangame.com/">Boolean Game</a></em> ?</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Repérer variables booléennes et expressions booléennes.</li>
+<li>Écrire une expression booléenne complexe en utilisant les opérateurs <code>non</code>, <code>et</code>, <code>ou</code>, <code>xor</code>.</li>
+<li>Donner la table de vérité des opérateurs <code>non</code>, <code>et</code>, <code>ou</code>, <code>xor</code>.</li>
+<li>Donner la table de vérité d'une expression booléenne complexe contenant des variables booléennes.</li>
+<li>Utiliser les opérateurs <code>//</code> (quotient de la division euclidienne), <code>%</code> (reste de la division euclidienne) et <code>**</code>* (puissance).</li>
+<li>Mesurer le temps moyen d'exécution d'une cellule de carnet <em>Jupyter</em> à l'aide de l'outil <em>Time it</em>.</li>
+</ul>
 
 
 
