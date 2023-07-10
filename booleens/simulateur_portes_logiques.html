@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="generator" content="Dominic Ford">
+        <meta name="author" content="Dominic Ford">
+        <script src="./simul_portes/jquery.min.js" type="text/javascript"></script>
+        <script src="./simul_portes/tether.min.js"></script>
+        <script src="./simul_portes/jquery-ui.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="./simul_portes/jquery-ui.min.css">
+        <link href="./simul_portes/css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./simul_portes/all.min.css">
+        <link rel="stylesheet" type="text/css" href="./simul_portes/style.css" media="all">
+        <script type="text/javascript" src="./simul_portes/sciencedemos.min.js"></script>
+    </head>
+    <body>
+        <div class="mainpage container-fluid" style="height: auto !important;">
+            <div class="row"><div class="col-xl-12"><div class="mainpane">
+                <p class="widetitle">Simulateur de portes logiques</p>
+                <div class="bydcf">
+                    Créé par <a href="https://sciencedemos.org.uk/logic_gates.php">Dominic Ford</a>
+                </div>
+                <div class="sim_logic_gates" data-meta="[]">
+                    <div class="simulation">
+                        <div class="menubar" style="background:#eee; padding:0; margin:12px 6px; border: 1px solid #ccc; border-radius: 2px; box-shadow: 3px 3px 2px #ccc; min-height: 30px;">
+                            <div class="toolbar_button toolbar_button_load" style="float:left;">
+                                <span class="toolbar_button_text load_button">Charger</span>
+                                <div style="display:none;">
+                                    <input type="file" class="load_file">
+                                </div>
+                            </div>
+                            <div class="toolbar_button toolbar_button_save" style="float:left;">
+                                <a class="toolbar_button_text save_link" download="dessin.json">Enregistrer</a>
+                            </div>
+                            <div class="toolbar_button toolbar_button_svg" style="float:left;">
+                                <a class="toolbar_button_text export_svg">Exporter en SVG</a>
+                            </div>
+                            <div class="toolbar_button toolbar_button_stop active" style="float:right;">
+                                <a class="toolbar_button_text stop" aria-hidden="true">Arrêter</a>
+                            </div>
+                            <div class="toolbar_button toolbar_button_pause disabled" style="float:right;">
+                                <a class="toolbar_button_text pause" aria-hidden="true">Mettre en pause</a>
+                            </div>
+                            <div class="toolbar_button toolbar_button_play" style="float:right;">
+                                <a class="toolbar_button_text play" aria-hidden="true">Démarrer</a>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        <div class="simulation_canvas" style="margin: 8px; overflow: hidden; border: 1px solid rgb(204, 204, 204); height: 400px;">
+                            <div class="simulation_holder" style="overflow: scroll; width: 970.667px; height: 400px;">
+                                <div class="simulation_holder2" style="position: relative; top: 0px; left: 0px; width: 950px; height: 370px;">
+                                    <canvas class="sim simBack" style="position: absolute; top: 0px; left: 0px; z-index: 1; width: 950px; height: 370px;" width="950" height="370"></canvas>
+                                    <div class="html_elements" style="position:absolute;top:0;left:0;z-index:2;"></div>
+                                    <canvas class="sim simBuf" style="position: absolute; top: 0px; left: 0px; z-index: 3; width: 950px; height: 370px;" width="950" height="370"></canvas>
+                                    <canvas class="sim simFore" style="position: absolute; top: 0px; left: 0px; z-index: 4; width: 950px; height: 370px;"></canvas>
+                                    <div class="html_below" style="position:absolute;top:0;left:0;z-index:5;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="toolbar" style="background:#eee; padding:0; margin:12px 6px; border: 1px solid #ccc; border-radius: 2px; box-shadow: 3px 3px 2px #ccc; min-height: 30px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>
