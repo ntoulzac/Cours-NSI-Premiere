@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600px" height="160px"
+                viewBox="12 -1 207 20"><g id="1" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 14.5, 1  15.5, 0  21.5, 0  22.5, 1  21.5, 2  15.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 22.5, 1 23.5, 2 23,       8  22,       9  21,       8  21.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 22,       9 23,      10 22.5,16  21.5,17  20.5,16  21,      10" fill="#000000"/>
+  <polygon id="bas" points=" 21.5,17  20.5,18  14.5,18  13.5,17  14.5,16  20.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 13.5,17  12.5,16  13,      10  14,       9  15,      10  14.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 14,       9  13,       8  13.5, 2  14.5, 1  15.5, 2  15,       8" fill="#000000"/>
+  <polygon id="centre" points=" 14,       9  15,       8  21,       8  22,       9  21,      10  15,      10" fill="#f0f0f0"/>
+</g><g id="2" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 27.5, 1  28.5, 0  34.5, 0  35.5, 1  34.5, 2  28.5, 2" fill="#f0f0f0"/>
+  <polygon id="haut droit" points=" 35.5, 1 36.5, 2 36,       8  35,       9  34,       8  34.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 35,       9 36,      10 35.5,16  34.5,17  33.5,16  34,      10" fill="#000000"/>
+  <polygon id="bas" points=" 34.5,17  33.5,18  27.5,18  26.5,17  27.5,16  33.5,16" fill="#f0f0f0"/>
+  <polygon id="bas gauche" points=" 26.5,17  25.5,16  26,      10  27,       9  28,      10  27.5,16" fill="#f0f0f0"/>
+  <polygon id="haut gauche" points=" 27,       9  26,       8  26.5, 2  27.5, 1  28.5, 2  28,       8" fill="#f0f0f0"/>
+  <polygon id="centre" points=" 27,       9  28,       8  34,       8  35,       9  34,      10  28,      10" fill="#f0f0f0"/>
+</g><g id="3" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 40.5, 1  41.5, 0  47.5, 0  48.5, 1  47.5, 2  41.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 48.5, 1 49.5, 2 49,       8  48,       9  47,       8  47.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 48,       9 49,      10 48.5,16  47.5,17  46.5,16  47,      10" fill="#f0f0f0"/>
+  <polygon id="bas" points=" 47.5,17  46.5,18  40.5,18  39.5,17  40.5,16  46.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 39.5,17  38.5,16  39,      10  40,       9  41,      10  40.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 40,       9  39,       8  39.5, 2  40.5, 1  41.5, 2  41,       8" fill="#f0f0f0"/>
+  <polygon id="centre" points=" 40,       9  41,       8  47,       8  48,       9  47,      10  41,      10" fill="#000000"/>
+</g><g id="4" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 53.5, 1  54.5, 0  60.5, 0  61.5, 1  60.5, 2  54.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 61.5, 1 62.5, 2 62,       8  61,       9  60,       8  60.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 61,       9 62,      10 61.5,16  60.5,17  59.5,16  60,      10" fill="#000000"/>
+  <polygon id="bas" points=" 60.5,17  59.5,18  53.5,18  52.5,17  53.5,16  59.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 52.5,17  51.5,16  52,      10  53,       9  54,      10  53.5,16" fill="#f0f0f0"/>
+  <polygon id="haut gauche" points=" 53,       9  52,       8  52.5, 2  53.5, 1  54.5, 2  54,       8" fill="#f0f0f0"/>
+  <polygon id="centre" points=" 53,       9  54,       8  60,       8  61,       9  60,      10  54,      10" fill="#000000"/>
+</g><g id="5" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 66.5, 1  67.5, 0  73.5, 0  74.5, 1  73.5, 2  67.5, 2" fill="#f0f0f0"/>
+  <polygon id="haut droit" points=" 74.5, 1 75.5, 2 75,       8  74,       9  73,       8  73.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 74,       9 75,      10 74.5,16  73.5,17  72.5,16  73,      10" fill="#000000"/>
+  <polygon id="bas" points=" 73.5,17  72.5,18  66.5,18  65.5,17  66.5,16  72.5,16" fill="#f0f0f0"/>
+  <polygon id="bas gauche" points=" 65.5,17  64.5,16  65,      10  66,       9  67,      10  66.5,16" fill="#f0f0f0"/>
+  <polygon id="haut gauche" points=" 66,       9  65,       8  65.5, 2  66.5, 1  67.5, 2  67,       8" fill="#000000"/>
+  <polygon id="centre" points=" 66,       9  67,       8  73,       8  74,       9  73,      10  67,      10" fill="#000000"/>
+</g><g id="6" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 79.5, 1  80.5, 0  86.5, 0  87.5, 1  86.5, 2  80.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 87.5, 1 88.5, 2 88,       8  87,       9  86,       8  86.5, 2" fill="#f0f0f0"/>
+  <polygon id="bas droit" points=" 87,       9 88,      10 87.5,16  86.5,17  85.5,16  86,      10" fill="#000000"/>
+  <polygon id="bas" points=" 86.5,17  85.5,18  79.5,18  78.5,17  79.5,16  85.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 78.5,17  77.5,16  78,      10  79,       9  80,      10  79.5,16" fill="#f0f0f0"/>
+  <polygon id="haut gauche" points=" 79,       9  78,       8  78.5, 2  79.5, 1  80.5, 2  80,       8" fill="#000000"/>
+  <polygon id="centre" points=" 79,       9  80,       8  86,       8  87,       9  86,      10  80,      10" fill="#000000"/>
+</g><g id="7" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 92.5, 1  93.5, 0  99.5, 0  100.5, 1  99.5, 2  93.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 100.5, 1 101.5, 2 101,       8  100,       9  99,       8  99.5, 2" fill="#f0f0f0"/>
+  <polygon id="bas droit" points=" 100,       9 101,      10 100.5,16  99.5,17  98.5,16  99,      10" fill="#000000"/>
+  <polygon id="bas" points=" 99.5,17  98.5,18  92.5,18  91.5,17  92.5,16  98.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 91.5,17  90.5,16  91,      10  92,       9  93,      10  92.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 92,       9  91,       8  91.5, 2  92.5, 1  93.5, 2  93,       8" fill="#000000"/>
+  <polygon id="centre" points=" 92,       9  93,       8  99,       8  100,       9  99,      10  93,      10" fill="#000000"/>
+</g><g id="8" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 105.5, 1  106.5, 0  112.5, 0  113.5, 1  112.5, 2  106.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 113.5, 1 114.5, 2 114,       8  113,       9  112,       8  112.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 113,       9 114,      10 113.5,16  112.5,17  111.5,16  112,      10" fill="#000000"/>
+  <polygon id="bas" points=" 112.5,17  111.5,18  105.5,18  104.5,17  105.5,16  111.5,16" fill="#f0f0f0"/>
+  <polygon id="bas gauche" points=" 104.5,17  103.5,16  104,      10  105,       9  106,      10  105.5,16" fill="#f0f0f0"/>
+  <polygon id="haut gauche" points=" 105,       9  104,       8  104.5, 2  105.5, 1  106.5, 2  106,       8" fill="#f0f0f0"/>
+  <polygon id="centre" points=" 105,       9  106,       8  112,       8  113,       9  112,      10  106,      10" fill="#f0f0f0"/>
+</g><g id="9" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 118.5, 1  119.5, 0  125.5, 0  126.5, 1  125.5, 2  119.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 126.5, 1 127.5, 2 127,       8  126,       9  125,       8  125.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 126,       9 127,      10 126.5,16  125.5,17  124.5,16  125,      10" fill="#000000"/>
+  <polygon id="bas" points=" 125.5,17  124.5,18  118.5,18  117.5,17  118.5,16  124.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 117.5,17  116.5,16  117,      10  118,       9  119,      10  118.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 118,       9  117,       8  117.5, 2  118.5, 1  119.5, 2  119,       8" fill="#000000"/>
+  <polygon id="centre" points=" 118,       9  119,       8  125,       8  126,       9  125,      10  119,      10" fill="#000000"/>
+</g><g id="10" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 131.5, 1  132.5, 0  138.5, 0  139.5, 1  138.5, 2  132.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 139.5, 1 140.5, 2 140,       8  139,       9  138,       8  138.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 139,       9 140,      10 139.5,16  138.5,17  137.5,16  138,      10" fill="#000000"/>
+  <polygon id="bas" points=" 138.5,17  137.5,18  131.5,18  130.5,17  131.5,16  137.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 130.5,17  129.5,16  130,      10  131,       9  132,      10  131.5,16" fill="#f0f0f0"/>
+  <polygon id="haut gauche" points=" 131,       9  130,       8  130.5, 2  131.5, 1  132.5, 2  132,       8" fill="#000000"/>
+  <polygon id="centre" points=" 131,       9  132,       8  138,       8  139,       9  138,      10  132,      10" fill="#000000"/>
+</g><g id="11" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 144.5, 1  145.5, 0  151.5, 0  152.5, 1  151.5, 2  145.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 152.5, 1 153.5, 2 153,       8  152,       9  151,       8  151.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 152,       9 153,      10 152.5,16  151.5,17  150.5,16  151,      10" fill="#000000"/>
+  <polygon id="bas" points=" 151.5,17  150.5,18  144.5,18  143.5,17  144.5,16  150.5,16" fill="#f0f0f0"/>
+  <polygon id="bas gauche" points=" 143.5,17  142.5,16  143,      10  144,       9  145,      10  144.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 144,       9  143,       8  143.5, 2  144.5, 1  145.5, 2  145,       8" fill="#000000"/>
+  <polygon id="centre" points=" 144,       9  145,       8  151,       8  152,       9  151,      10  145,      10" fill="#000000"/>
+</g><g id="12" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 157.5, 1  158.5, 0  164.5, 0  165.5, 1  164.5, 2  158.5, 2" fill="#f0f0f0"/>
+  <polygon id="haut droit" points=" 165.5, 1 166.5, 2 166,       8  165,       9  164,       8  164.5, 2" fill="#f0f0f0"/>
+  <polygon id="bas droit" points=" 165,       9 166,      10 165.5,16  164.5,17  163.5,16  164,      10" fill="#000000"/>
+  <polygon id="bas" points=" 164.5,17  163.5,18  157.5,18  156.5,17  157.5,16  163.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 156.5,17  155.5,16  156,      10  157,       9  158,      10  157.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 157,       9  156,       8  156.5, 2  157.5, 1  158.5, 2  158,       8" fill="#000000"/>
+  <polygon id="centre" points=" 157,       9  158,       8  164,       8  165,       9  164,      10  158,      10" fill="#000000"/>
+</g><g id="13" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 170.5, 1  171.5, 0  177.5, 0  178.5, 1  177.5, 2  171.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 178.5, 1 179.5, 2 179,       8  178,       9  177,       8  177.5, 2" fill="#f0f0f0"/>
+  <polygon id="bas droit" points=" 178,       9 179,      10 178.5,16  177.5,17  176.5,16  177,      10" fill="#f0f0f0"/>
+  <polygon id="bas" points=" 177.5,17  176.5,18  170.5,18  169.5,17  170.5,16  176.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 169.5,17  168.5,16  169,      10  170,       9  171,      10  170.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 170,       9  169,       8  169.5, 2  170.5, 1  171.5, 2  171,       8" fill="#000000"/>
+  <polygon id="centre" points=" 170,       9  171,       8  177,       8  178,       9  177,      10  171,      10" fill="#f0f0f0"/>
+</g><g id="14" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 183.5, 1  184.5, 0  190.5, 0  191.5, 1  190.5, 2  184.5, 2" fill="#f0f0f0"/>
+  <polygon id="haut droit" points=" 191.5, 1 192.5, 2 192,       8  191,       9  190,       8  190.5, 2" fill="#000000"/>
+  <polygon id="bas droit" points=" 191,       9 192,      10 191.5,16  190.5,17  189.5,16  190,      10" fill="#000000"/>
+  <polygon id="bas" points=" 190.5,17  189.5,18  183.5,18  182.5,17  183.5,16  189.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 182.5,17  181.5,16  182,      10  183,       9  184,      10  183.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 183,       9  182,       8  182.5, 2  183.5, 1  184.5, 2  184,       8" fill="#f0f0f0"/>
+  <polygon id="centre" points=" 183,       9  184,       8  190,       8  191,       9  190,      10  184,      10" fill="#000000"/>
+</g><g id="15" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 196.5, 1  197.5, 0  203.5, 0  204.5, 1  203.5, 2  197.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 204.5, 1 205.5, 2 205,       8  204,       9  203,       8  203.5, 2" fill="#f0f0f0"/>
+  <polygon id="bas droit" points=" 204,       9 205,      10 204.5,16  203.5,17  202.5,16  203,      10" fill="#f0f0f0"/>
+  <polygon id="bas" points=" 203.5,17  202.5,18  196.5,18  195.5,17  196.5,16  202.5,16" fill="#000000"/>
+  <polygon id="bas gauche" points=" 195.5,17  194.5,16  195,      10  196,       9  197,      10  196.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 196,       9  195,       8  195.5, 2  196.5, 1  197.5, 2  197,       8" fill="#000000"/>
+  <polygon id="centre" points=" 196,       9  197,       8  203,       8  204,       9  203,      10  197,      10" fill="#000000"/>
+</g><g id="16" style="fill-rule:evenodd; stroke:#FFFFFF;
+    stroke-width:0.25; stroke-opacity:1; stroke-linecap:butt; stroke-linejoin:miter;">
+  <polygon id="haut" points=" 209.5, 1  210.5, 0  216.5, 0  217.5, 1  216.5, 2  210.5, 2" fill="#000000"/>
+  <polygon id="haut droit" points=" 217.5, 1 218.5, 2 218,       8  217,       9  216,       8  216.5, 2" fill="#f0f0f0"/>
+  <polygon id="bas droit" points=" 217,       9 218,      10 217.5,16  216.5,17  215.5,16  216,      10" fill="#f0f0f0"/>
+  <polygon id="bas" points=" 216.5,17  215.5,18  209.5,18  208.5,17  209.5,16  215.5,16" fill="#f0f0f0"/>
+  <polygon id="bas gauche" points=" 208.5,17  207.5,16  208,      10  209,       9  210,      10  209.5,16" fill="#000000"/>
+  <polygon id="haut gauche" points=" 209,       9  208,       8  208.5, 2  209.5, 1  210.5, 2  210,       8" fill="#000000"/>
+  <polygon id="centre" points=" 209,       9  210,       8  216,       8  217,       9  216,      10  210,      10" fill="#000000"/>
+</g></svg>

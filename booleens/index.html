@@ -639,18 +639,12 @@
 <div class="admonition feuille">
 <p class="admonition-title">Énoncé</p>
 <p><strong>1.</strong> Dresser la table de vérité du <em>demi-additionneur</em> représenté ci-dessous, en indiquant la valeur des deux sorties en fonction de la valeur des deux entrées.</p>
-<p><img alt="Demi-additionneur" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/demi_additionneur.svg" /></p>
-<div class="admonition important">
-<p class="admonition-title">Simulation</p>
 <p>Il est possible de simuler le comportement du demi-additionneur sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>demi_additionneur.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/demi_additionneur.json">ici</a>.</p>
-</div>
-<p><strong>2.</strong> En vous basant sur la table de vérité de la question précédente, justifier que le demi-additionneur permet d'additionner deux bits.</p>
+<p><img alt="Demi-additionneur" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/demi_additionneur.svg" /></p>
+<p><strong>2.</strong> En déduire une justification du fait que le demi-additionneur permet d'additionner deux bits.</p>
 <p><strong>3.</strong> Expliquer en quoi le circuit ci-dessous, appelé <em>additionneur complet</em>, permet d'additionner trois bits.</p>
-<p><img alt="Additionneur complet" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/additionneur_complet.svg" /></p>
-<div class="admonition important">
-<p class="admonition-title">Simulation</p>
 <p>Il est possible de simuler le comportement de l'additionneur complet sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>additionneur_complet.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/additionneur_complet.json">ici</a>.</p>
-</div>
+<p><img alt="Additionneur complet" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/additionneur_complet.svg" /></p>
 <p><strong>4.</strong> Sur le schéma de l'<em>additionneur 4 bits</em> ci-dessous, identifier :</p>
 <ul>
 <li>les deux entrées composées de quatre bits chacune,</li>
@@ -659,7 +653,7 @@
 <li>les quatre retenues obtenues au cours du calcul.</li>
 </ul>
 <p><img alt="Additionneur 4 bits" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/additionneur_4bits.svg" /></p>
-<p><strong>5.</strong> Représenter en rouge les liaisons où le courant passe lorsqu'on effectue l'addition <code>6 + 5</code>.</p>
+<p><strong>5.</strong> Représenter en rouge les liaisons par lesquelles le courant passe lorsqu'on effectue l'addition <code>6 + 5</code>.</p>
 <p><strong>6.</strong> Même question pour l'addition <code>12 + 5</code>.</p>
 </div>
 </div>
@@ -672,7 +666,27 @@
 </ul>
 <div class="admonition feuille">
 <p class="admonition-title">Énoncé</p>
-<p><strong>1.</strong> xxx</p>
+<p>Un <em>afficheur 7 segments</em> permet d'afficher un chiffre en activant ou désactivant chacun des sept segments qui le composent.</p>
+<p><strong>Première partie : cas des chiffres de 0 et 1</strong></p>
+<p><img alt="Afficheur 7 segments" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/affichage01.svg" /></p>
+<p>Les deux chiffres <code>0</code> et <code>1</code> se représentent sur un seul bit, qu'on peut associer à une variable booléenne <code>a</code>.</p>
+<p><code>a</code> vaut <code>False</code> pour le chiffre <code>0</code>. <code>a</code> vaut <code>True</code> pour le chiffre <code>1</code>.</p>
+<p><strong>1.</strong> Déterminer, en fonction de la valeur de <code>a</code>, si chacun des sept segments de l'afficheur doit être activé ou pas.</p>
+<p>On peut créer un circuit logique qui illustre les sept expressions booléennes trouvées à la question précédente.</p>
+<p><img alt="Circuit logique afficheur 1 bit" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/afficheur_1bit.svg" /></p>
+<p><strong>2.</strong> Simuler le comportement de ce circuit sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>afficheur_1bit.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/afficheur_1bit.json">ici</a>.</p>
+<p><strong>Deuxième partie : cas des chiffres de 0 à 3</strong></p>
+<p><img alt="Afficheur 7 segments" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/affichage0123.svg" /></p>
+<p>Les quatre chiffres de <code>0</code> à <code>3</code> se représentent sur deux bits, qu'on peut associer à deux variables booléennes : <code>a</code> pour le bit de poids fort et <code>b</code> pour le bit de poids faible.</p>
+<p><strong>3.</strong> Déterminer, en fonction des valeurs de <code>a</code> et <code>b</code>, si chacun des sept segments de l'afficheur doit être activé ou pas.</p>
+<p>On peut créer un circuit logique qui illustre les sept expressions booléennes trouvées à la question précédente.</p>
+<p><img alt="Circuit logique afficheur 2 bits" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/afficheur_2bits_vierge.svg" /></p>
+<p><strong>4.</strong> Compléter ce circuit puis simuler son comportement sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> après avoir chargé le fichier <code>afficheur_2bits_vierge.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/afficheur_2bits_vierge.json">ici</a>.</p>
+<p><strong>Troisième partie : cas des seize chiffres hexadécimaux</strong></p>
+<p><img alt="Afficheur 7 segments" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/affichage0F.svg" /></p>
+<p>Les seize chiffres hexadécimaux se représentent sur quatre bits, qu'on peut associer à quatre variables booléennes <code>a</code>, <code>b</code>, <code>c</code> et <code>d</code> : <code>a</code> pour le bit de poids le plus fort et <code>d</code> pour le bit de poids le plus faible.</p>
+<p><strong>5.</strong> Après avoir dressé la table de vérité de l'expression booléenne <code>(a and d) or (c and (a or not b or not d)) or ((a ^ b) and not c)</code>, justifier que cette expression permet l'activation du segment central pour l'affichage des seize chiffres hexadécimaux.</p>
+<p><strong>6.</strong> Déterminer une expression booléenne (en fonction des variables <code>a</code>, <code>b</code>, <code>c</code> et <code>d</code>) permettant l'activation du segment situé en bas à gauche pour l'affichage des seize chiffres hexadécimaux.</p>
 </div>
 </div>
 </div>
