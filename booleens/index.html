@@ -608,7 +608,7 @@
 </details>
 <details class="activité">
 <summary>Activités 2-08 à 2-11</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Activité 2-08 : xxx</label><label for="__tabbed_3_2">Activité 2-09 : xxx</label><label for="__tabbed_3_3">Activité 2-10 : Jeu de rapidité <em>Boolean Game</em></label><label for="__tabbed_3_4">Activité 2-11 : Additionneur 4 bits</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Activité 2-08 : xxx</label><label for="__tabbed_3_2">Activité 2-09 : Jeu de rapidité <em>Boolean Game</em></label><label for="__tabbed_3_3">Activité 2-10 : Additionneur 4 bits</label><label for="__tabbed_3_4">Activité 2-11 : Afficheur 7 segments</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><strong>Objectifs :</strong></p>
@@ -624,15 +624,6 @@
 </div>
 </div>
 <div class="tabbed-block">
-<p><strong>Objectif :</strong> xxx</p>
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
-</div>
-<div class="admonition capytale">
-<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
-</div>
-</div>
-<div class="tabbed-block">
 <p><strong>Objectif :</strong> S'entraîner à manipuler les opérateurs logiques.</p>
 <div class="admonition joint">
 <p class="admonition-title">Boolean Game</p>
@@ -640,14 +631,48 @@
 </div>
 </div>
 <div class="tabbed-block">
-<p><strong>Objectif :</strong> Comprendre comment les portes logiques permettent d'additionner deux entiers.</p>
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Comprendre le fonctionnemet d'un circuit logique donné.</li>
+<li>Comprendre comment un circuit logique permet d'additionner deux entiers.</li>
+</ul>
 <div class="admonition feuille">
 <p class="admonition-title">Énoncé</p>
-<p><strong>1.</strong> Compléter la table de vérité du <em>demi-additionneur</em> représenté ci-dessous.</p>
+<p><strong>1.</strong> Dresser la table de vérité du <em>demi-additionneur</em> représenté ci-dessous, en indiquant la valeur des deux sorties en fonction de la valeur des deux entrées.</p>
 <p><img alt="Demi-additionneur" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/demi_additionneur.svg" /></p>
+<div class="admonition important">
+<p class="admonition-title">Simulation</p>
+<p>Il est possible de simuler le comportement du demi-additionneur sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>demi_additionneur.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/demi_additionneur.json">ici</a>.</p>
+</div>
+<p><strong>2.</strong> En vous basant sur la table de vérité de la question précédente, justifier que le demi-additionneur permet d'additionner deux bits.</p>
+<p><strong>3.</strong> Expliquer en quoi le circuit ci-dessous, appelé <em>additionneur complet</em>, permet d'additionner trois bits.</p>
 <p><img alt="Additionneur complet" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/additionneur_complet.svg" /></p>
+<div class="admonition important">
+<p class="admonition-title">Simulation</p>
+<p>Il est possible de simuler le comportement de l'additionneur complet sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>additionneur_complet.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/additionneur_complet.json">ici</a>.</p>
+</div>
+<p><strong>4.</strong> Sur le schéma de l'<em>additionneur 4 bits</em> ci-dessous, identifier :</p>
+<ul>
+<li>les deux entrées composées de quatre bits chacune,</li>
+<li>les deux sorties : la première composée de quatre bits, la seconde d'un bit unique (retenue),</li>
+<li>les quatre additionneurs complets utilisés,</li>
+<li>les quatre retenues obtenues au cours du calcul.</li>
+</ul>
 <p><img alt="Additionneur 4 bits" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/additionneur_4bits.svg" /></p>
-<p><strong>2.</strong> <code>c</code>, <code>d</code> et <code>e</code> étant trois variables booléennes, donner la table de vérité de l'expression <code>(c or e) and (d or (not e))</code>.</p>
+<p><strong>5.</strong> Représenter en rouge les liaisons où le courant passe lorsqu'on effectue l'addition <code>6 + 5</code>.</p>
+<p><strong>6.</strong> Même question pour l'addition <code>12 + 5</code>.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Déterminer des expressions booléennes à partir de tables de vérité.</li>
+<li>Représenter des expressions booléennes sous forme de circuits logiques.</li>
+<li>Comprendre comment afficher un chiffre hexadécimal sur un afficheur 7 segments.</li>
+</ul>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p><strong>1.</strong> xxx</p>
 </div>
 </div>
 </div>
@@ -655,11 +680,12 @@
 </details>
 <h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li>Repérer variables booléennes et expressions booléennes.</li>
+<li>Repérer variables booléennes et expressions booléennes dans un algorithme ou un programme.</li>
 <li>Écrire une expression booléenne complexe en utilisant les opérateurs <code>non</code>, <code>et</code>, <code>ou</code>, <code>xor</code>.</li>
 <li>Donner la table de vérité des opérateurs <code>non</code>, <code>et</code>, <code>ou</code>, <code>xor</code>.</li>
 <li>Donner la table de vérité d'une expression booléenne complexe contenant des variables booléennes.</li>
-<li>Utiliser les opérateurs <code>//</code> (quotient de la division euclidienne), <code>%</code> (reste de la division euclidienne) et <code>**</code>* (puissance).</li>
+<li>Faire le lien entre une expression booléenne complexe contenant des variables booléennes et un circuit de portes logiques.</li>
+<li>Utiliser les opérateurs <code>//</code> (quotient de la division euclidienne), <code>%</code> (reste de la division euclidienne) et <code>**</code> (puissance).</li>
 <li>Mesurer le temps moyen d'exécution d'une cellule de carnet <em>Jupyter</em> à l'aide de l'outil <em>Time it</em>.</li>
 </ul>
 
