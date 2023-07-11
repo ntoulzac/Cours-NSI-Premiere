@@ -531,17 +531,6 @@
 </tr>
 </tbody>
 </table>
-<details class="activité">
-<summary>Activité 2-03 : Portes logiques</summary>
-<p><a href="https://sciencedemos.org.uk/logic_gates.php">lien</a></p>
-<p><strong>Objectif :</strong> xxx</p>
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/notebooks/2-03_act_potes_logiques.ipynb">ici</a></p>
-</div>
-<div class="admonition capytale">
-<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/ffe1-1763660">CAPYTALE</a></p>
-</div>
-</details>
 <h3 id="tables-de-verite">Tables de vérité<a class="headerlink" href="#tables-de-verite" title="Permanent link">⚓︎</a></h3>
 <p>Une <strong>table de vérité</strong> est un tableau dans lequel apparait la valeur d'une expression booléenne en fonction des valeurs prises par les variables booléennes contenues dans l'expression.</p>
 <p>On donne ci-dessous la table de vérité des expressions <code>not A</code>, <code>A and B</code>, <code>A or B</code>, <code>A ^ B</code>.</p>
@@ -565,64 +554,107 @@
 </div>
 </div>
 <details class="exo">
-<summary>Exercice 2-04 : Table de vérité d'expressions booléennes</summary>
+<summary>Exercice 2-03 : Table de vérité d'expressions booléennes</summary>
 <p><strong>Objectif :</strong> Dresser la table de vérité d'une expression booléenne dépendant de deux ou trois variables booléennes.</p>
 <div class="admonition feuille">
 <p class="admonition-title">Énoncé</p>
-<p><strong>1.</strong> <code>a</code> et <code>b</code> étant deux variables booléennes, donner la table de vérité de l'expression <code>(not a) or (a and b)</code>.</p>
-<p><strong>2.</strong> <code>c</code>, <code>d</code> et <code>e</code> étant trois variables booléennes, donner la table de vérité de l'expression <code>(c or e) and (d or (not e))</code>.</p>
+<p><strong>1.</strong> <code>a</code> et <code>b</code> étant deux variables booléennes, dresser la table de vérité de l'expression <code>(not a) or (a and b)</code>.</p>
+<p><strong>2.</strong> <code>c</code>, <code>d</code> et <code>e</code> étant trois variables booléennes, dresser la table de vérité de l'expression <code>(c or e) and (d or (not e))</code>.</p>
+</div>
+</details>
+<details class="activité">
+<summary>Activité 2-04 : Circuits logiques</summary>
+<p><strong>Objectif :</strong> Découvrir le fonctionnement des circuits logiques.</p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p><img alt="Portes logiques" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/portes_logiques.svg" /></p>
+<p>Simuler le fonctionnement du circuit sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>portes_logiques.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/portes_logiques.json">ici</a>.</p>
 </div>
 </details>
 <h2 id="partie-c-exercices-et-activites">Partie C - Exercices et activités<a class="headerlink" href="#partie-c-exercices-et-activites" title="Permanent link">⚓︎</a></h2>
 <details class="exo">
 <summary>Exercices 2-05 à 2-07</summary>
-<p><a href="https://www.lyceum.fr/1g/nsi/2-representation-des-donnees-types-et-valeurs-de-base/5-les-booleens/exo/#simplifications-dexpressions-bool%C3%A9ennes">lien</a></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Exercice 2-05 : xxx</label><label for="__tabbed_2_2">Exercice 2-06 : xxx</label><label for="__tabbed_2_3">Exercice 2-07 : xxx</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Exercice 2-05 : Identification d'un coupable</label><label for="__tabbed_2_2">Exercice 2-06 : Table de vérité et circuit logique</label><label for="__tabbed_2_3">Exercice 2-07 : Simplification d'expressions booléennes</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
-</div>
-<div class="admonition capytale">
-<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p>Un vol de bijoux a été commis et quatre hommes sont suspects. Un seul est coupable, un deuxième est son complice et les deux autres sont innocents.</p>
+<p>Voici le signalement des quatre suspects :</p>
+<table>
+<thead>
+<tr>
+<th align="center">Nom du suspect</th>
+<th align="center">Moustache</th>
+<th align="center">Lunettes</th>
+<th align="center">Cicatrice</th>
+<th align="center">Boucle d'oreilles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Donatello</td>
+<td align="center">oui</td>
+<td align="center">oui</td>
+<td align="center">non</td>
+<td align="center">non</td>
+</tr>
+<tr>
+<td align="center">Leonardo</td>
+<td align="center">oui</td>
+<td align="center">non</td>
+<td align="center">non</td>
+<td align="center">oui</td>
+</tr>
+<tr>
+<td align="center">Michelangelo</td>
+<td align="center">non</td>
+<td align="center">non</td>
+<td align="center">oui</td>
+<td align="center">oui</td>
+</tr>
+<tr>
+<td align="center">Raffaello</td>
+<td align="center">non</td>
+<td align="center">oui</td>
+<td align="center">oui</td>
+<td align="center">non</td>
+</tr>
+</tbody>
+</table>
+<p>Lors de leur interrogatoire, les suspects déclarent :</p>
+<ul>
+<li>Donatello : "Le coupable a une cicatrice ou une boucle d'oreille mais pas les deux !"</li>
+<li>Leonardo : "Le coupable a des lunettes !"</li>
+<li>Michelangelo : "Le coupable a une moustache ou des lunettes mais pas les deux !"</li>
+<li>Raffaello : "Le coupable n'a pas de cicatrice !"</li>
+</ul>
+<p>Sachant que le coupable et son complice mentent et que les deux innocents disent la vérité, déterminer qui est le coupable et qui est son complice.</p>
 </div>
 </div>
 <div class="tabbed-block">
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
-</div>
-<div class="admonition capytale">
-<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p><strong>1.</strong> <code>a</code> et <code>b</code> et <code>c</code> étant trois variables booléennes, dresser la table de vérité de l'expression <code>(a ^ b) and (not a or c)</code>.</p>
+<p><strong>2.</strong> Représenter l'expression de la question précédente sous forme de circuit logique sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em>.</p>
 </div>
 </div>
 <div class="tabbed-block">
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
-</div>
-<div class="admonition capytale">
-<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p>Soient <code>a</code>, <code>b</code> et <code>c</code> trois variables booléennes.</p>
+<p><strong>1.</strong> Déterminer une forme simplifiée de l'expression booléenne <code>a or (not a and b)</code>.</p>
+<p><strong>2.</strong> Même question pour l'expression booléenne <code>(a or b) and (a or not b)</code>.</p>
+<p><strong>3.</strong> Même question pour l'expression booléenne <code>(not a or b) and (a or b or c) and not c</code>.</p>
 </div>
 </div>
 </div>
 </div>
 </details>
 <details class="activité">
-<summary>Activités 2-08 à 2-11</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Activité 2-08 : xxx</label><label for="__tabbed_3_2">Activité 2-09 : Jeu de rapidité <em>Boolean Game</em></label><label for="__tabbed_3_3">Activité 2-10 : Additionneur 4 bits</label><label for="__tabbed_3_4">Activité 2-11 : Afficheur 7 segments</label></div>
+<summary>Activités 2-08 à 2-10</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Activité 2-08 : Jeu de rapidité <em>Boolean Game</em></label><label for="__tabbed_3_2">Activité 2-09 : Additionneur 4 bits</label><label for="__tabbed_3_3">Activité 2-10 : Afficheur 7 segments</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<p><strong>Objectifs :</strong></p>
-<ul>
-<li>xxx</li>
-<li>xxx</li>
-</ul>
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="">ici</a></p>
-</div>
-<div class="admonition capytale">
-<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="">CAPYTALE</a></p>
-</div>
-</div>
 <div class="tabbed-block">
 <p><strong>Objectif :</strong> S'entraîner à manipuler les opérateurs logiques.</p>
 <div class="admonition joint">
@@ -633,7 +665,7 @@
 <div class="tabbed-block">
 <p><strong>Objectifs :</strong></p>
 <ul>
-<li>Comprendre le fonctionnemet d'un circuit logique donné.</li>
+<li>Comprendre le fonctionnement d'un circuit logique donné.</li>
 <li>Comprendre comment un circuit logique permet d'additionner deux entiers.</li>
 </ul>
 <div class="admonition feuille">
