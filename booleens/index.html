@@ -559,7 +559,7 @@
 <div class="admonition feuille">
 <p class="admonition-title">Énoncé</p>
 <p><strong>1.</strong> <code>a</code> et <code>b</code> étant deux variables booléennes, dresser la table de vérité de l'expression <code>(not a) or (a and b)</code>.</p>
-<p><strong>2.</strong> <code>c</code>, <code>d</code> et <code>e</code> étant trois variables booléennes, dresser la table de vérité de l'expression <code>(c or e) and (d or (not e))</code>.</p>
+<p><strong>2.</strong> <code>a</code>, <code>b</code> et <code>c</code> étant trois variables booléennes, dresser la table de vérité de l'expression <code>(a or c) and (b or (not c))</code>.</p>
 </div>
 </details>
 <details class="activité">
@@ -569,19 +569,17 @@
 <p class="admonition-title">Énoncé</p>
 <p>Un <strong>circuit logique</strong> est un dispositif électronique qui permet de réaliser des opérations booléennes en combinant des entrées, des sorties et des <strong>portes logiques</strong> (liées aux opérateurs booléens). </p>
 <p>Un point donné du circuit ne peut avoir que deux états : <code>1</code> (correspondant à un niveau haut de tension électrique) ou <code>0</code> (correspondant à un niveau bas de tension électrique).</p>
-<p><strong>1.</strong> Identifier quelle est l'entrée et quelle est la sortie du circuit logique suivant :</p>
+<p>L'utilisation d'un interrupteur en entrée permet de passer d'un état à l'autre et donc de matérialiser une variable booléenne. L'utilisation d'une lampe en sortie permet de visualiser l'état.</p>
+<p><strong>1.</strong> Identifier, dans chaque cas, quelle est l'entrée et quelle est la sortie du circuit logique suivant :</p>
 <p><img alt="Circuit logique" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/portes_logiques_1.svg" /></p>
-<p>L'utilisation d'un interrupteur permet de passer d'un état à l'autre et donc de matérialiser une variable booléenne.</p>
-<p><strong>2.</strong> Identifier, dans chaque cas, quelle est l'entrée et quelle est la sortie du circuit logique suivant :</p>
-<p><img alt="Circuit logique" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/portes_logiques_2.svg" /></p>
 <p>On donne maintenant le circuit logique suivant dans lequel apparaissent quatre portes logiques reliées chacune à une sortie. On a matérialisé deux variables booléennes en entrée.</p>
+<p><img alt="Portes logiques" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/portes_logiques_2.svg" /></p>
+<p><strong>2.</strong> Simuler le fonctionnement de ce circuit sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>portes_logiques.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/portes_logiques.json">ici</a>.</p>
+<p><strong>3.</strong> En déduire quelle porte logique est associée à quel opérateur booléen.</p>
+<p><strong>4.</strong> Déterminer une expression booléenne correspondant à la sortie du circuit logique ci-dessous. On appelle <code>a</code> la variable booléenne associée à l'interrupteur du bas et <code>b</code> celle associée à l'interrupteur du haut.</p>
 <p><img alt="Portes logiques" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/portes_logiques_3.svg" /></p>
-<p><strong>3.</strong> Simuler le fonctionnement de ce circuit sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em> en chargeant le fichier <code>portes_logiques.json</code> téléchargeable <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/donnees/portes_logiques.json">ici</a>.</p>
-<p><strong>4.</strong> En déduire quelle porte logique est associée à quel opérateur booléen.</p>
-<p><strong>5.</strong> Déterminer une expression booléenne correspondant à la sortie du circuit logique ci-dessous. On appelle <code>a</code> la variable booléenne associée à l'interrupteur du bas et <code>b</code> celle associée à l'interrupteur du haut.</p>
-<p><img alt="Portes logiques" src="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/images/portes_logiques_4.svg" /></p>
-<p><strong>6.</strong> Créer, sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em>, un circuit correspondant à l'expression booléenne <code>(a ^ b) or (not a and not b)</code>.</p>
-<p><strong>7.</strong> Sur le même schéma, ajouter un second circuit correspondant à l'expression booléenne <code>not (a and b)</code>.</p>
+<p><strong>5.</strong> Créer, sur le site <em><a href="https://sciencedemos.org.uk/logic_gates.php">Logic gate simulator</a></em>, un circuit correspondant à l'expression booléenne <code>(a ^ b) or (not a and not b)</code>.</p>
+<p><strong>6.</strong> Sur le même schéma, ajouter un second circuit correspondant à l'expression booléenne <code>not (a and b)</code>.</p>
 </div>
 </details>
 <h2 id="partie-c-exercices-et-activites">Partie C - Exercices et activités<a class="headerlink" href="#partie-c-exercices-et-activites" title="Permanent link">⚓︎</a></h2>

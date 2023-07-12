@@ -1,52 +1,201 @@
-<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="730" height="460" xmlns="http://www.w3.org/2000/svg">
 <g>
-<path d="M 80.00 100.00 L 100.00 100.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<text x="60.00" y="107.00" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" text-anchor="middle" stroke="none" fill="#000" >1</text>
-<circle cx="100.00" cy="100.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="100.00" cy="100.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<path d="M 370.00 100.00 L 390.00 100.00" fill="none" stroke="#000000" stroke-width="2" />
-<circle cx="405.00" cy="100.00" r="15.00" fill="none" stroke="#000" stroke-width="2" />
-<circle cx="370.00" cy="100.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="370.00" cy="100.00" r="4.00" fill="none" stroke="#000000" stroke-width="2" />
-<path d="M 100.00 100.00 L 125.00 100.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<path d="M 155.00 100.00 L 180.00 100.00" fill="none" stroke="#000000" stroke-width="2" />
-<path d="M 125.00 100.00 L 150.00 80.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<circle cx="125.00" cy="100.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
-<circle cx="125.00" cy="100.00" r="4.00" stroke="none" fill="#000" />
-<circle cx="155.00" cy="100.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
-<circle cx="155.00" cy="100.00" r="4.00" stroke="none" fill="#000" />
-<circle cx="100.00" cy="100.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="100.00" cy="100.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<circle cx="180.00" cy="100.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="180.00" cy="100.00" r="4.00" fill="none" stroke="#000000" stroke-width="2" />
-<path d="M 180.00 100.00 L 370.00 100.00" fill="none" stroke="#000000" stroke-width="2" />
-<circle cx="180.00" cy="100.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="180.00" cy="100.00" r="4.00" fill="none" stroke="#000000" stroke-width="2" />
-<circle cx="370.00" cy="100.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="370.00" cy="100.00" r="4.00" fill="none" stroke="#000000" stroke-width="2" />
-<path d="M 100.00 200.00 L 180.00 200.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<circle cx="125.00" cy="200.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
-<circle cx="125.00" cy="200.00" r="4.00" stroke="none" fill="#000" />
-<circle cx="155.00" cy="200.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
-<circle cx="155.00" cy="200.00" r="4.00" stroke="none" fill="#000" />
-<circle cx="100.00" cy="200.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="100.00" cy="200.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<circle cx="180.00" cy="200.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="180.00" cy="200.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<path d="M 80.00 200.00 L 100.00 200.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<text x="60.00" y="207.00" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" text-anchor="middle" stroke="none" fill="#000" >1</text>
-<circle cx="100.00" cy="200.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="100.00" cy="200.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<path d="M 370.00 200.00 L 390.00 200.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<circle cx="405.00" cy="200.00" r="15.00" fill="none" stroke="#000" stroke-width="2" />
-<circle cx="405.00" cy="200.00" r="15.00" stroke="none" fill="red" />
-<circle cx="405.00" cy="200.00" r="15.00" fill="none" stroke="#000" stroke-width="2" />
-<circle cx="370.00" cy="200.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="370.00" cy="200.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<path d="M 180.00 200.00 L 370.00 200.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<circle cx="180.00" cy="200.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="180.00" cy="200.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
-<circle cx="370.00" cy="200.00" r="4.00" stroke="none" fill="#fff" />
-<circle cx="370.00" cy="200.00" r="4.00" fill="none" stroke="#ff0000" stroke-width="2" />
+<path d="M 90.00 80.00 L 110.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<text x="70.00" y="87.00" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" text-anchor="middle" stroke="none" fill="#000" >1</text>
+<circle cx="110.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="110.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 160.00 80.00 L 185.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 215.00 80.00 L 240.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 185.00 80.00 L 210.00 60.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="185.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="185.00" cy="80.00" r="4.00" stroke="none" fill="#000" />
+<circle cx="215.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="215.00" cy="80.00" r="4.00" stroke="none" fill="#000" />
+<circle cx="160.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="160.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="240.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="240.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 160.00 230.00 L 185.00 230.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 215.00 230.00 L 240.00 230.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 185.00 230.00 L 210.00 210.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="185.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="185.00" cy="230.00" r="4.00" stroke="none" fill="#000" />
+<circle cx="215.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="215.00" cy="230.00" r="4.00" stroke="none" fill="#000" />
+<circle cx="160.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="160.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="240.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="240.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 410.00 80.00 L 430.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 470.00 80.00 L 490.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 430.00 60.00 L 430.00 100.00 L 460.00 80.00 L 430.00 60.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="465.00" cy="80.00" r="5.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 410.00 170.00 L 430.00 170.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 410.00 190.00 L 430.00 190.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 470.00 180.00 L 490.00 180.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 450.00 160.00 L 430.00 160.00 L 430.00 200.00 L 450.00 200.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 450.00 160.00 C 460.00 160.00 , 470.00 170.00 , 470.00 180.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 450.00 200.00 C 460.00 200.00 , 470.00 190.00 , 470.00 180.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="170.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="170.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="190.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="190.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="180.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="180.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 410.00 270.00 L 435.00 270.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 410.00 290.00 L 435.00 290.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 470.00 280.00 L 490.00 280.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 430.00 260.00 C 439.00 269.00 , 439.00 291.00 , 430.00 300.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 430.00 260.00 C 450.00 260.00 , 465.00 270.00 , 470.00 280.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 430.00 300.00 C 450.00 300.00 , 465.00 290.00 , 470.00 280.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="270.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="270.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="290.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="290.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="280.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="280.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 410.00 370.00 L 435.00 370.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 410.00 390.00 L 435.00 390.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 470.00 380.00 L 490.00 380.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 422.50 360.00 C 431.50 369.00 , 431.50 391.00 , 422.50 400.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 430.00 360.00 C 439.00 369.00 , 439.00 391.00 , 430.00 400.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 430.00 360.00 C 450.00 360.00 , 465.00 370.00 , 470.00 380.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 430.00 400.00 C 450.00 400.00 , 465.00 390.00 , 470.00 380.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="370.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="370.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="390.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="390.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="380.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="380.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 590.00 380.00 L 610.00 380.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="625.00" cy="380.00" r="15.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="380.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="380.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 590.00 280.00 L 610.00 280.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="625.00" cy="280.00" r="15.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="280.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="280.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 590.00 180.00 L 610.00 180.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="625.00" cy="180.00" r="15.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="180.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="180.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 590.00 80.00 L 610.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="625.00" cy="80.00" r="15.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 110.00 80.00 L 110.00 230.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="110.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="110.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="110.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="110.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 110.00 230.00 L 160.00 230.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="110.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="110.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="160.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="160.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 110.00 80.00 L 160.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="110.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="110.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="160.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="160.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 240.00 80.00 L 290.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="240.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="240.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 240.00 230.00 L 310.00 230.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="240.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="240.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 490.00 380.00 L 590.00 380.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="380.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="380.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="380.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="380.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 490.00 280.00 L 590.00 280.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="280.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="280.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="280.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="280.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 490.00 180.00 L 590.00 180.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="180.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="180.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="180.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="180.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 490.00 80.00 L 590.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="490.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="490.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="590.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="590.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 290.00 80.00 L 410.00 80.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 290.00 80.00 L 290.00 170.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="80.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="80.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="170.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="170.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 290.00 170.00 L 410.00 170.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="170.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="170.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="170.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="170.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 290.00 170.00 L 290.00 270.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="170.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="170.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="270.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="270.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 290.00 270.00 L 410.00 270.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="270.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="270.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="270.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="270.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 290.00 270.00 L 290.00 370.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="270.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="270.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="370.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="370.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 290.00 370.00 L 410.00 370.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="290.00" cy="370.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="290.00" cy="370.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="370.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="370.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 310.00 230.00 L 310.00 190.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="190.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="190.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 310.00 190.00 L 410.00 190.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="190.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="190.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="190.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="190.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 310.00 230.00 L 310.00 290.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="230.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="230.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="290.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="290.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 310.00 290.00 L 410.00 290.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="290.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="290.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="290.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="290.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 310.00 290.00 L 310.00 390.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="290.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="290.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="390.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="390.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<path d="M 310.00 390.00 L 410.00 390.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="310.00" cy="390.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="310.00" cy="390.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
+<circle cx="410.00" cy="390.00" r="4.00" stroke="none" fill="#fff" />
+<circle cx="410.00" cy="390.00" r="4.00" fill="none" stroke="#000" stroke-width="2" />
 </g>
 </svg>
