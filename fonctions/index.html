@@ -267,9 +267,115 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Fonctions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Fonctions
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-appel-et-definition-dune-fonction" class="md-nav__link">
+    Partie A - Appel et définition d'une fonction
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - Appel et définition d'une fonction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appel-dune-fonction" class="md-nav__link">
+    Appel d'une fonction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-dune-fonction" class="md-nav__link">
+    Définition d'une fonction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cas-particulier-des-procedures" class="md-nav__link">
+    Cas particulier des procédures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-specification-dune-fonction" class="md-nav__link">
+    Partie B - Spécification d'une fonction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-assertions" class="md-nav__link">
+    Partie C - Assertions
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie C - Assertions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assertions-avec-le-mot-cle-assert" class="md-nav__link">
+    Assertions avec le mot-clé assert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assertions-avec-le-mot-cle-raise" class="md-nav__link">
+    Assertions avec le mot-clé raise
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-d-exercices-et-activites" class="md-nav__link">
+    Partie D - Exercices et activités
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -382,15 +488,448 @@
 
 
 <h1 id="chapitre-3-fonctions">Chapitre 3 : Fonctions<a class="headerlink" href="#chapitre-3-fonctions" title="Permanent link">⚓︎</a></h1>
-<p>Page en construction...</p>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees.ipynb">(énoncé)</a></p>
+<h2 id="partie-a-appel-et-definition-dune-fonction">Partie A - Appel et définition d'une fonction<a class="headerlink" href="#partie-a-appel-et-definition-dune-fonction" title="Permanent link">⚓︎</a></h2>
+<h3 id="appel-dune-fonction">Appel d'une fonction<a class="headerlink" href="#appel-dune-fonction" title="Permanent link">⚓︎</a></h3>
+<details class="activité">
+<summary>Activité 3-01 : Départements de la région Île-de-France</summary>
+<p><strong>Objectif :</strong> Comprendre comment faire appel à une fonction.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/act_3_01_departements.ipynb">ici</a></p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees_corrigé.ipynb">(corrigé)</a></p>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/6abf-1764433">CAPYTALE</a></p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+</details>
+<p>L'activité introductive nous fait utiliser deux <strong>fonctions</strong> :</p>
+<ul>
+<li>La première, <code>nom_departement</code>, renvoie le nom d'un département de la région Île-de-France à partir de son numéro.</li>
+<li>La seconde, <code>prefecture</code>, renvoie le nom du chef lieu d'un département de la région Île-de-France à partir de son numéro.</li>
+</ul>
+<p>Les <strong>appels</strong> <code>nom_departement(94)</code> et <code>prefecture(94)</code> sont des expressions dont la valeur est déterminée et renvoyée par la fonction. Ces expressions peuvent bien entendu être affectées à des variables.</p>
+<p>La valeur <code>94</code> écrite entre parenthèses après le nom des deux fonctions s'appelle un <strong>argument</strong>. En changeant l'argument d'une fonction, son appel peut produire un résultat différent.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numero</span> <span class="o">=</span> <span class="mi">94</span>
+<span class="n">nom</span> <span class="o">=</span> <span class="n">nom_departement</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<span class="n">ville</span> <span class="o">=</span> <span class="n">prefecture</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Le département&quot;</span><span class="p">,</span> <span class="n">numero</span><span class="p">,</span> <span class="s2">&quot;s&#39;appelle&quot;</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="s2">&quot;et sa préfecture est&quot;</span><span class="p">,</span> <span class="n">ville</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Par exemple, l'exécution du programme ci-dessus entraîne l'affichage de la phrase <code>Le département 94 s'appelle Val-de-Marne et sa préfecture est Créteil</code>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">numero</span> <span class="o">=</span> <span class="mi">93</span>
+<span class="n">nom</span> <span class="o">=</span> <span class="n">nom_departement</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<span class="n">ville</span> <span class="o">=</span> <span class="n">prefecture</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Le département&quot;</span><span class="p">,</span> <span class="n">numero</span><span class="p">,</span> <span class="s2">&quot;s&#39;appelle&quot;</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="s2">&quot;et sa préfecture est&quot;</span><span class="p">,</span> <span class="n">ville</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Par contre, l'exécution du programme ci-dessus entraîne l'affichage de la phrase <code>Le département 93 s'appelle Seine Saint Denis et sa préfecture est Bobigny</code>.</p>
+<h3 id="definition-dune-fonction">Définition d'une fonction<a class="headerlink" href="#definition-dune-fonction" title="Permanent link">⚓︎</a></h3>
+<p>Nous souhaitons maintenant <strong>définir</strong> une fonction <code>nom_academie</code>, qui renvoie le nom de l'académie dont fait partie un département désigné par son numéro. On rappelle que les trois académies d'Île-de-France sont composées de la façon suivante :</p>
+<table>
+<thead>
+<tr>
+<th align="center">Académie de Créteil</th>
+<th align="center">Académie de Paris</th>
+<th align="center">Académie de Versailles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">77 - 93 - 94</td>
+<td align="center">75</td>
+<td align="center">78 - 91 - 92 - 95</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">nom_academie</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">75</span><span class="p">:</span>
+        <span class="n">ac</span> <span class="o">=</span> <span class="s2">&quot;Académie de Paris&quot;</span>
+    <span class="k">elif</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">77</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">93</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">94</span><span class="p">:</span>
+        <span class="n">ac</span> <span class="o">=</span> <span class="s2">&quot;Académie de Créteil&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ac</span> <span class="o">=</span> <span class="s2">&quot;Académie de Versailles&quot;</span>
+    <span class="k">return</span> <span class="n">ac</span>
+</code></pre></div></td></tr></table></div>
+<p>Lors qu'on définit une fonction, la première ligne commence toujours par le mot clé <code>def</code>, suivi du nom de la fonction, et se termine par un couple de parenthèses suivi de deux points.</p>
+<p>À l'intérieur des parenthèses, on fait apparaître le ou les éventuel(s) <strong>paramètre(s) d'entrée</strong> de la fonction. Il s'agit de <strong>variables locales</strong>, qui n'existent dans la mémoire que pendant l'exécution de la fonction, et qui ont pour valeur un <strong>argument</strong> fixé au moment de l'appel de la fonction. Par exemple, pour la fonction <code>nom_academie</code>, il y a un seul paramètre d'entrée <code>num</code>, qui correspond à un numéro de département.</p>
+<p>Sous la première ligne figure la séquence d'instructions qui est exécutée lors de l'appel de la fonction. Cette séquence s'exécute soit jusqu'à la fin, soit jusqu'à l'instruction <code>return variable_ou_expression</code> (qui stoppe toujours l'exécution de la fonction dans laquelle elle se trouve). C'est cette instruction qui permet de renvoyer une valeur, appelée <strong>paramètre de sortie</strong>, qui est conservée dans la mémoire pour la suite de l'exécution du programme. Par exemple, pour la fonction <code>nom_academie</code>, il y a un paramètre de sortie <code>ac</code>, qui correspond au nom de l'académie dans laquelle se trouve le département numéro <code>num</code>.</p>
+<div class="admonition beware">
+<p class="admonition-title">Attention à ne pas confondre définition et appel de fonction</p>
+<p>Lorsqu'on se contente d'écrire la définition d'une fonction, aucune exécution de la fonction n'est réalisée. C'est seulement lors d'un appel à la fonction que les instructions correspondantes sont exécutées.</p>
+</div>
+<details class="exo">
+<summary>Exercice 3-02 : Définition de fonctions simples</summary>
+<p><strong>Objectif :</strong> Définir et tester des fonctions simples tout en Retravaillant les instructions conditionnelles et les boucles.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/ex_3_02_fonctions_simples.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/c06a-1764434">CAPYTALE</a></p>
+</div>
+</details>
+<details class="activité">
+<summary>Activité 3-03 : Retour sur la suite de Syracuse</summary>
+<p><strong>Objectif :</strong> Poursuivre l'étude de la suite de Syracuse, vue au chapitre précédent, dans le but d'écrire et de tester des fonctions.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/act_3_03_duree_vol_syracuse.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/612e-1764435">CAPYTALE</a></p>
+</div>
+</details>
+<h3 id="cas-particulier-des-procedures">Cas particulier des procédures<a class="headerlink" href="#cas-particulier-des-procedures" title="Permanent link">⚓︎</a></h3>
+<p>Une <strong>procédure</strong> est une fonction qui ne retourne aucune valeur, et ne possède donc <strong>pas de paramètre de sortie</strong>. Elle peut, en revanche, posséder un ou plusieurs paramètres d'entrée.</p>
+<details class="exo">
+<summary>Exercice 3-04 : Jeu du retournement</summary>
+<p><strong>Objectif :</strong> Identifier dans un programme quelles sont les fonctions et quelles sont les procédures.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/ex_3_04_jeu_retournement.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/4256-1764436">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-b-specification-dune-fonction">Partie B - Spécification d'une fonction<a class="headerlink" href="#partie-b-specification-dune-fonction" title="Permanent link">⚓︎</a></h2>
+<p>La <strong>spécification</strong> d'une fonction permet de connaître son <strong>rôle</strong> et ses éventuels <strong>paramètres d'entrée</strong>, <strong>paramètre de sortie</strong> et <strong>effets de bord</strong>.</p>
+<p>Cela permet de savoir <strong>à quoi sert</strong> une fonction, <strong>comment l'utiliser</strong> (quelles entrées ? quelle sortie ?) et <strong>quels sont ses effets secondaires</strong> éventuels sur la machine (par exemple la modification d'une variable globale en mémoire, un affichage à l'écran, l'écriture dans un fichier, ...).</p>
+<p>Considérons par exemple la fonction suivante, et donnons sa spécification :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">aire_triangle</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>  <span class="c1"># Les trois côtés sont de même longueur</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Triangle équilatéral !&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">==</span> <span class="n">a</span><span class="p">:</span>  <span class="c1"># Deux des trois côtés sont de même longueur</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Triangle isocèle !&quot;</span><span class="p">)</span>
+    <span class="n">demi_perimetre</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="n">aire</span> <span class="o">=</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">*</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">-</span> <span class="n">c</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span>
+    <span class="k">return</span> <span class="n">aire</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li><strong>Rôle de la fonction :</strong> Affiche à l'écran si le triangle est équilatéral ou isocèle, et renvoie son aire.</li>
+<li><strong>Paramètres d'entrée :</strong> <code>a</code>, <code>b</code>, <code>c</code> (nombres), les longueurs des trois côtés du triangle.</li>
+<li><strong>Paramètre de sortie :</strong> <code>aire</code> (nombre), l'aire du triangle <em>(calculée grâce à la formule de Héron)</em>.</li>
+<li><strong>Effets de bord :</strong> Affichage à l'écran dans le cas où le triangle est équilatéral ou isocèle.</li>
+</ul>
+<p>La <strong>spécification</strong> d'une fonction s'écrit en Python dans une zone (appelée <strong>docstring</strong>) délimitée par trois guillemets doubles <code>"""</code> et située juste au dessous de la ligne commençant par <code>def</code>.</p>
+<p>On fait apparaître successivement le rôle de la fonction, puis ses paramètres d'entrée, son paramètre de sortie et ses effets de bord s'il y en a.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">aire_triangle</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Affiche à l&#39;écran si le triangle est équilatéral ou isocèle, et renvoie son aire.</span>
+<span class="sd">    - Entrées : a, b, c (nombres)</span>
+<span class="sd">    - Sortie : aire (nombre)</span>
+<span class="sd">    Effet de bord : affichage éventuel à l&#39;écran</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>  <span class="c1"># Les trois côtés sont de même longueur</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Triangle équilatéral !&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">==</span> <span class="n">a</span><span class="p">:</span>  <span class="c1"># Deux des trois côtés sont de même longueur</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Triangle isocèle !&quot;</span><span class="p">)</span>
+    <span class="n">demi_perimetre</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="n">aire</span> <span class="o">=</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">*</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">demi_perimetre</span> <span class="o">-</span> <span class="n">c</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span>
+    <span class="k">return</span> <span class="n">aire</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition beware">
+<p class="admonition-title">Attention aux spécifications</p>
+<p>Toutes les fonctions et procédures que vous définirez devront désormais avoir leur spécification. Cela permettra de rendre votre code <strong>plus clair</strong>, en explicitant le rôle de chaque fonction ou procédure et les paramètres qu'elle utilise, mais aussi <strong>plus facile à corriger</strong> dans le cas où il contiendrait des erreurs.</p>
+</div>
+<p>La fonction <code>help</code> permet d'accéder à la docstring de la fonction dont le nom est passé en paramètre d'entrée.</p>
+<details class="exo">
+<summary>Exercice 3-05 : Procédure <code>etoile</code></summary>
+<p><strong>Objectif :</strong> Écrire la spécification d'une procédure après l'avoir testée.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/ex_3_05_etoile.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/75b6-1764437">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-c-assertions">Partie C - Assertions<a class="headerlink" href="#partie-c-assertions" title="Permanent link">⚓︎</a></h2>
+<p>Lors d'un appel de fonction, il faut souvent s'assurer que les <strong>arguments</strong> passés en paramètre d'entrée sont acceptables, tant au niveau de leur <strong>type</strong> que de leur <strong>valeur</strong>. On utilise pour cela des <strong>assertions</strong>.</p>
+<p>On peut par exemple remarquer que la procédure <code>etoile</code> définie précédemment ne fonctionne correctement que si son paramètre d'entrée <code>nb_branches</code> est un entier impair.</p>
+<p>En Python, il existe deux façons de mettre en place une assertion :</p>
+<ul>
+<li>avec le mot-clé <code>assert</code>, à privilégier pour le débogage des fonctions que vous serez le seul ou la seule à utiliser.</li>
+<li>avec le mot-clé <code>raise</code>, à privilégier dans le cas où les fonctions seraient mises à la disposition d'autres que vous.</li>
+</ul>
+<h3 id="assertions-avec-le-mot-cle-assert">Assertions avec le mot-clé <code>assert</code><a class="headerlink" href="#assertions-avec-le-mot-cle-assert" title="Permanent link">⚓︎</a></h3>
+<p>La syntaxe est la suivante : <code>assert condition, message_d_erreur</code>.</p>
+<p>Si la <code>condition</code> est fausse, l'exécution de la fonction s'interrompt et le <code>message_d_erreur</code> s'affiche.</p>
+<p>Pour vérifier que <code>nb_branches</code> est un entier, la condition s'écrit <code>type(nb_branches) == int</code>. C'est une <strong>vérification de type</strong>.</p>
+<p>Pour vérifier que <code>nb_branches</code> est impair, la condition s'écrit <code>nb_branches % 2 != 0</code>. C'est une <strong>vérification de valeur</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">etoile</span><span class="p">(</span><span class="n">nb_branches</span><span class="p">,</span> <span class="n">longueur</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">nb_branches</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">,</span> <span class="s2">&quot;le premier argument doit être un entier&quot;</span>
+    <span class="k">assert</span> <span class="n">nb_branches</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;le premier argument doit être impair&quot;</span>
+    <span class="n">clear</span><span class="p">()</span>
+    <span class="n">angle</span> <span class="o">=</span> <span class="mi">180</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">nb_branches</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb_branches</span><span class="p">):</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>L'appel <code>etoile("bonjour", 300)</code> entraîne l'erreur suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ne">AssertionError</span><span class="p">:</span> <span class="n">le</span> <span class="n">premier</span> <span class="n">argument</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span>
+</code></pre></div></td></tr></table></div>
+<p>L'appel <code>etoile(6, 300)</code> entraîne l'erreur suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ne">AssertionError</span><span class="p">:</span> <span class="n">le</span> <span class="n">premier</span> <span class="n">argument</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">impair</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition étoile">
+<p class="admonition-title">Utilisation de la fonction <code>type</code></p>
+<p>La fonction <code>type</code> renvoie le type de la variable ou de l'expression qui lui est passée en paramètre. Les principaux types que nous utiliserons cette année sont listés dans le tableau suivant :</p>
+<table>
+<thead>
+<tr>
+<th align="center">Notation Python</th>
+<th align="center">Type</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">Exemples</th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>int</code></td>
+<td align="center">Nombre entier</td>
+<td align="center"><code>0</code></td>
+<td align="center"><code>-1023</code></td>
+<td align="center"><code>7*9+2</code></td>
+<td align="center"><code>10**9</code></td>
+<td align="center"><code>int(3.1)</code></td>
+</tr>
+<tr>
+<td align="center"><code>float</code></td>
+<td align="center">Nombre flottant</td>
+<td align="center"><code>0.0</code></td>
+<td align="center"><code>-10.23</code></td>
+<td align="center"><code>6/3</code></td>
+<td align="center"><code>10**-9</code></td>
+<td align="center"><code>float(3)</code></td>
+</tr>
+<tr>
+<td align="center"><code>bool</code></td>
+<td align="center">Booléen</td>
+<td align="center"><code>True</code></td>
+<td align="center"><code>False</code></td>
+<td align="center"><code>True or False</code></td>
+<td align="center"><code>2 &lt;= 0</code></td>
+<td align="center"><code>bool(1)</code></td>
+</tr>
+<tr>
+<td align="center"><code>function</code></td>
+<td align="center">Fonction ou procédure</td>
+<td align="center"><code>print</code></td>
+<td align="center"><code>input</code></td>
+<td align="center"><code>nom_departement</code></td>
+<td align="center"><code>aire_triangle</code></td>
+<td align="center"><code>etoile</code></td>
+</tr>
+<tr>
+<td align="center"><code>str</code></td>
+<td align="center">Chaîne de caractères</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><em>voir chap. 4</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>list</code></td>
+<td align="center">Tableau</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><em>voir chap. 5</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>tuple</code></td>
+<td align="center">p-uplet</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><em>voir chap. 6</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>dict</code></td>
+<td align="center">Dictionnaire</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><em>voir chap. 6</em></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details class="exo">
+<summary>Exercice 3-06 : Assertions avec <code>assert</code></summary>
+<p><strong>Objectif :</strong> Écrire des assertions avec le mot-clé <code>assert</code>.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/ex_3_06_assert.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/507d-1764438">CAPYTALE</a></p>
+</div>
+</details>
+<h3 id="assertions-avec-le-mot-cle-raise">Assertions avec le mot-clé <code>raise</code><a class="headerlink" href="#assertions-avec-le-mot-cle-raise" title="Permanent link">⚓︎</a></h3>
+<p>Le mot-clé <code>raise</code> s'utilise à l'intérieur d'une instruction conditionnelle.</p>
+<p>La syntaxe est la suivante : <code>raise Exception(message_d_erreur)</code>.</p>
+<p>Si la commande est exécutée, la fonction s'interrompt et le <code>message_d_erreur</code> s'affiche.</p>
+<p>Le mot-clé <code>Exception</code> peut, par exemple, être remplacé :</p>
+<ul>
+<li>par <code>TypeError</code> dans le cas d'une erreur de type.</li>
+<li>par <code>ValueError</code> dans le cas d'une erreur de valeur.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">etoile</span><span class="p">(</span><span class="n">nb_branches</span><span class="p">,</span> <span class="n">longueur</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">nb_branches</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;le premier argument doit être un entier&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">nb_branches</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;le premier argument doit être impair&quot;</span><span class="p">)</span>
+    <span class="n">clear</span><span class="p">()</span>
+    <span class="n">angle</span> <span class="o">=</span> <span class="mi">180</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">nb_branches</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb_branches</span><span class="p">):</span>
+        <span class="n">forward</span><span class="p">(</span><span class="n">longueur</span><span class="p">)</span>
+        <span class="n">left</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>L'appel <code>etoile("bonjour", 300)</code> entraîne l'erreur suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ne">TypeError</span><span class="p">:</span> <span class="n">le</span> <span class="n">premier</span> <span class="n">argument</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span>
+</code></pre></div></td></tr></table></div>
+<p>L'appel <code>etoile(6, 300)</code> entraîne l'erreur suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ne">ValueError</span><span class="p">:</span> <span class="n">le</span> <span class="n">premier</span> <span class="n">argument</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">impair</span>
+</code></pre></div></td></tr></table></div>
+<details class="exo">
+<summary>Exercice 3-07 : Assertions avec <code>raise</code></summary>
+<p><strong>Objectif :</strong> Écrire des assertions avec le mot-clé <code>raise</code>.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/ex_3_07_raise.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/f19a-1764439">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-d-exercices-et-activites">Partie D - Exercices et activités<a class="headerlink" href="#partie-d-exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices 3-08 à 3-10</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Exercice 3-08 : Théorème de Pythagore</label><label for="__tabbed_1_2">Exercice 3-09 : xxxx</label><label for="__tabbed_1_3">Exercice 3-10 : Nombre de jours</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/ex_3_08_pythagore.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/309c-1764440">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/b0b6-1764441">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/ex_3_10_nombre_jours.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/d2aa-1764442">CAPYTALE</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="activité">
+<summary>Activités 3-11 à 3-13</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Activité 3-11 : Triangles et carrés</label><label for="__tabbed_2_2">Activité 3-12 : xxxx</label><label for="__tabbed_2_3">Activité 3-13 : xxxx</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Objectif :</strong> xxxx</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/act_3_11_triangles_carres.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/3188-1764443">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Objectif :</strong> xxxx</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/06ce-1764444">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Objectif :</strong> xxxx</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/fonctions/notebooks/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/6945-1764445">CAPYTALE</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Appeler une fonction.</li>
+<li>Définir une fonction, avec paramètres d'entrée éventuels et paramètre de sortie.</li>
+<li>Tester une fonction, et vérifier que le résultat obtenu est cohérent.</li>
+<li>Faire la différence entre variable globale et variable locale associée à une fonction.</li>
+<li>Faire la différence entre une fonction et une procédure.</li>
+<li>Écrire ou comprendre la spécification d'une fonction.</li>
+<li>Écrire une assertion avec le mot-clé <code>assert</code>.</li>
+<li>Écrire une assertion avec le mot-clé <code>raise</code>.</li>
+<li>Utiliser la fonction <code>type</code>.</li>
+<li>Utiliser la fonction <code>help</code> pour obtenir la spécification d'une fonction.</li>
+<li>Utiliser quelques procédures du module <code>Turtle</code>, dont <code>forward</code>, <code>left</code>, <code>right</code>, <code>goto</code>, <code>up</code> et <code>down</code>.</li>
+</ul>
 
 
 
