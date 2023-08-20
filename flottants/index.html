@@ -342,9 +342,115 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Flottants
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Flottants
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-rappels-sur-lecriture-scientifique-des-nombres-decimaux" class="md-nav__link">
+    Partie A - Rappels sur l'écriture scientifique des nombres décimaux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-ecriture-binaire-des-nombres" class="md-nav__link">
+    Partie B - Écriture binaire des nombres
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie B - Écriture binaire des nombres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rappel-concernant-les-nombres-entiers-positifs" class="md-nav__link">
+    Rappel concernant les nombres entiers positifs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecriture-binaire-des-nombres-compris-entre-0-et-1" class="md-nav__link">
+    Écriture binaire des nombres compris entre 0 et 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-representation-des-flottants-en-machine-norme-ieee-754" class="md-nav__link">
+    Partie C - Représentation des flottants en machine (norme IEEE 754)
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie C - Représentation des flottants en machine (norme IEEE 754)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principe-de-la-representation" class="md-nav__link">
+    Principe de la représentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-d-probleme-du-test-degalite-de-deux-flottants" class="md-nav__link">
+    Partie D - Problème du test d'égalité de deux flottants
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-d-exercices" class="md-nav__link">
+    Partie D - Exercices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -382,15 +488,208 @@
 
 
 <h1 id="chapitre-8-flottants">Chapitre 8 : Flottants<a class="headerlink" href="#chapitre-8-flottants" title="Permanent link">⚓︎</a></h1>
-<p>Page en construction...</p>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees.ipynb">(énoncé)</a></p>
+<h2 id="partie-a-rappels-sur-lecriture-scientifique-des-nombres-decimaux">Partie A - Rappels sur l'écriture scientifique des nombres décimaux<a class="headerlink" href="#partie-a-rappels-sur-lecriture-scientifique-des-nombres-decimaux" title="Permanent link">⚓︎</a></h2>
+<p>L'écriture scientifique d'un nombre décimal est composée de trois parties :</p>
+<ul>
+<li>un <strong>signe</strong>, qui peut être plus ou moins,</li>
+<li>une <strong>mantisse</strong>, qui un nombre décimal compris entre <span class="arithmatex">\(1\)</span> (inclus) et <span class="arithmatex">\(10\)</span> (exclu),</li>
+<li>un <strong>exposant</strong>, qui est un nombre entier positif ou négatif.</li>
+</ul>
+<p>Par exemple, l'écriture scientifique du nombre 2030 est : <span class="arithmatex">\(+ 2,03 \times 10^3\)</span>.</p>
+<p>Le signe est plus, la mantisse est <span class="arithmatex">\(2,03\)</span> et l'exposant est <span class="arithmatex">\(3\)</span>.</p>
+<p>En Python, une façon d'afficher l'écriture scientifique d'un nombre <code>n</code> est d'utiliser la commande suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+<p>La mantisse s'affiche par défaut avec six chiffres après la virgule, mais il est possible d'en afficher davantage ou moins :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.2e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>  <span class="c1"># 2 chiffres après la virgule pour la mantisse</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.10e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>  <span class="c1"># 10 chiffres après la virgule pour la mantisse</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition beware">
+<p class="admonition-title"><span class="arithmatex">\(0\)</span> n'a pas d'écriture scientifique</p>
+<p>On remarque qu'un nombre ne peut pas être écrit dans ce format : le nombre <span class="arithmatex">\(0\)</span>. En effet, la mantisse devrait être égale à 0, ce qui est exclu par définition.</p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees_corrigé.ipynb">(corrigé)</a></p>
+<details class="exo">
+<summary>Exercice 8-01 : Écriture scientifique décimale</summary>
+<p><strong>Objectif :</strong> Déterminer l'écriture scientifique décimale de nombres, à la main et avec Python.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/constr_elem/notebooks/8_01_ex_ecriture_sc_dec.ipynb">ici</a></p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-b-ecriture-binaire-des-nombres">Partie B - Écriture binaire des nombres<a class="headerlink" href="#partie-b-ecriture-binaire-des-nombres" title="Permanent link">⚓︎</a></h2>
+<h3 id="rappel-concernant-les-nombres-entiers-positifs">Rappel concernant les nombres entiers positifs<a class="headerlink" href="#rappel-concernant-les-nombres-entiers-positifs" title="Permanent link">⚓︎</a></h3>
+<p>Donner l'écriture binaire d'un nombre entier positif, cela revient à écrire ce nombre sous la forme d'une somme de puissances positives de <span class="arithmatex">\(2\)</span>.</p>
+<p>Par exemple, pour le nombre <span class="arithmatex">\(2030\)</span> : <span class="arithmatex">\(2030 = 1024 + 512 + 256 + 128 + 64 + 32 + 8 + 4 + 2\)</span> c'est-à-dire :
+<span class="arithmatex">\(2030 = 2^{10} + 2^9 + 2^8 + 2^7 + 2^6 + 2^5 + 2^3 + 2^2 + 2^1\)</span> et l'écriture binaire de <span class="arithmatex">\(2030\)</span> est donc :
+<span class="arithmatex">\(2030 = (11111101110)_2\)</span>.</p>
+<p>On peut vérifier le résultat obtenu grâce à la fonction <code>bin</code>, qui renvoie l'écriture binaire sous la forme d'une chaîne de caractères qui commence par <code>0b</code> :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">2030</span><span class="p">))</span>  <span class="c1"># affiche &quot;0b11111101110&quot;</span>
+</code></pre></div></td></tr></table></div>
+<details class="exo">
+<summary>Exercice 8-02 : Écriture binaire de nombres entiers positifs</summary>
+<p><strong>Objectif :</strong> Déterminer l'écriture binaire de nombres entiers positifs, à la main et avec Python.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/constr_elem/notebooks/8_02_ex_ecriture_binaire.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</details>
+<h3 id="ecriture-binaire-des-nombres-compris-entre-0-et-1">Écriture binaire des nombres compris entre 0 et 1<a class="headerlink" href="#ecriture-binaire-des-nombres-compris-entre-0-et-1" title="Permanent link">⚓︎</a></h3>
+<p>Le principe est le même pour obtenir l'écriture binaire des nombres à virgule. On s'autorise simplement d'utiliser aussi des puissances négatives de <span class="arithmatex">\(2\)</span>.</p>
+<p>Par exemple, pour le nombre <span class="arithmatex">\(0,6875\)</span> : <span class="arithmatex">\(0,6875 = 0,5 + 0,125 + 0,0625\)</span> c'est-à-dire :
+<span class="arithmatex">\(0,6875 = 2^{-1} + 2^{-3} + 2^{-4}\)</span> et l'écriture binaire de <span class="arithmatex">\(0,6875\)</span> est donc :
+<span class="arithmatex">\(0,6875 = (0,1011)_2\)</span>.</p>
+<details class="exo">
+<summary>Exercice 8-03 : Écriture binaire de nombres à virgule</summary>
+<p><strong>Objectif :</strong> Déterminer à la main l'écriture binaire de nombres non entiers.</p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p>Donner l'écriture binaire des nombres <span class="arithmatex">\(0,3125\)</span> et <span class="arithmatex">\(0,515625\)</span>.</p>
+</div>
+</details>
+<p>Remarquons que les nombres réels qui ont une écriture décimale infinie ont aussi une écriture binaire infinie. Par exemple : <span class="arithmatex">\(1/3 = 0,33333333... = (0,01010101...)_2\)</span>.</p>
+<p>Il existe par contre des nombres réels qui ont une écriture décimale finie mais qui ont une écriture binaire infinie. Par exemple : <span class="arithmatex">\(1/5 = 0,2 = (0,00110011...)_2\)</span>.</p>
+<details class="exo">
+<summary>Exercice 8-04 : Écriture binaire infinie</summary>
+<p><strong>Objectif :</strong> Déterminer à la main l'écriture binaire infinie d'un nombre.</p>
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p>Donner les 10 premiers bits après la virgule de l'écriture binaire des nombres <span class="arithmatex">\(0,1\)</span> et <span class="arithmatex">\(0,3\)</span>.</p>
+</div>
+</details>
+<h2 id="partie-c-representation-des-flottants-en-machine-norme-ieee-754">Partie C - Représentation des flottants en machine (norme IEEE 754)<a class="headerlink" href="#partie-c-representation-des-flottants-en-machine-norme-ieee-754" title="Permanent link">⚓︎</a></h2>
+<p>La norme informatique la plus couramment utilisée pour représenter les nombres flottants est la <strong>norme IEEE 754</strong> mise au point en 1985. Il s'agit d'une variante de l'écriture scientifique en base 2, dans laquelle la mantisse est un nombre compris entre 1 (inclus) et 2 (exclu).</p>
+<p>Les flottants peuvent être représentés sur 32 bits (format dit de <strong>simple précision</strong>) ou sur 64 bits (format dit de <strong>double précision</strong>).</p>
+<table>
+<thead>
+<tr>
+<th align="center">Format</th>
+<th align="center">Signe <code>s</code></th>
+<th align="center">Exposant <code>e</code></th>
+<th align="center">Mantisse <code>m</code></th>
+<th align="center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">simple précision</td>
+<td align="center">1 bit</td>
+<td align="center">8 bits</td>
+<td align="center">23 bits</td>
+<td align="center">32 bits</td>
+</tr>
+<tr>
+<td align="center">double précision</td>
+<td align="center">1 bit</td>
+<td align="center">11 bits</td>
+<td align="center">52 bits</td>
+<td align="center">64 bits</td>
+</tr>
+</tbody>
+</table>
+<h3 id="principe-de-la-representation">Principe de la représentation<a class="headerlink" href="#principe-de-la-representation" title="Permanent link">⚓︎</a></h3>
+<p>Le bit le plus à gauche (bit de poids fort) correspond au signe du flottant :</p>
+<ul>
+<li><code>0</code> pour un flottant positif,</li>
+<li><code>1</code> pour un flottant négatif.</li>
+</ul>
+<p>Les 8 ou 11 bits suivants correspondent à l'exposant <code>e</code>. Comme <code>e</code> peut être positif ou négatif, on ne représente pas directement l'entier <code>e</code> mais :</p>
+<ul>
+<li>l'entier <code>e + 127</code> sur 8 bits pour le format simple précision,</li>
+<li>l'entier <code>e + 1023</code> sur 11 bits pour le format double précision.</li>
+</ul>
+<p>Les 23 ou 52 derniers bits correspondent à la mantisse <code>m</code>. Comme <code>m</code> est par définition compris entre 1 et 2, c'est uniquement la partie fractionnaire (partie située après la virgule) du nombre <code>m - 1</code> qui est représentée sur 23 ou 52 bits.</p>
+<h3 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">⚓︎</a></h3>
+<p>Représentons par exemple sur 32 bits le nombre flottant <code>-0,2</code>. Il est négatif donc le bit le plus à gauche de sa représentation est un <code>1</code>.</p>
+<p>De plus, nous avons vu précédemment que <span class="arithmatex">\(0,2 = (0,00110011...)_2 = (1,10011001...)_2 \times 2^{-3}\)</span>. L'exposant <code>e</code> est donc <span class="arithmatex">\(-3\)</span> et la mantisse <code>m</code> est <span class="arithmatex">\(1,10011001...\)</span>.</p>
+<p>On écrit sur 8 bits le nombre <code>e + 127</code> (c'est-à-dire 124) ce qui donne <code>01111100</code>.</p>
+<p>Enfin, on écrit sur 23 bits la partie fractionnaire de <code>m-1</code> (c'est-à-dire <span class="arithmatex">\(0,10011001...\)</span>) ce qui donne <code>10011001100110011001100(1)</code>, arrondi à <code>10011001100110011001101</code>.</p>
+<p>La représentation sur 32 bits obtenue pour le flottant <code>-0,2</code> est donc <code>1 01111100 10011001100110011001101</code>.</p>
+<div class="admonition beware">
+<p class="admonition-title">Représentation du nombre <span class="arithmatex">\(0\)</span></p>
+<p>Nous avons dit que le nombre <span class="arithmatex">\(0\)</span> n'a pas d'écriture scientifique. Il est par convention représenté par <code>0 00000000 00000000000000000000000</code> sur 32 bits.</p>
+</div>
+<details class="exo">
+<summary>Exercice 8-05 : Représentation de flottants sur 32 bits</summary>
+<p><strong>Objectif :</strong> Déterminer à la main la représentation sur 32 bits d'un nombre flottant.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/constr_elem/notebooks/8_05_ex_representation_32_bits.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-d-probleme-du-test-degalite-de-deux-flottants">Partie D - Problème du test d'égalité de deux flottants<a class="headerlink" href="#partie-d-probleme-du-test-degalite-de-deux-flottants" title="Permanent link">⚓︎</a></h2>
+<p>La représentation des nombres flottants en machine est <strong>approximative</strong> lorsque leur écriture binaire est infinie ou composée de trop de bits après la virgule.</p>
+<p>Par exemple, les nombres <span class="arithmatex">\(0,1\)</span> et <span class="arithmatex">\(0,2\)</span> ont une écriture binaire infinie, d'où les problèmes d'arrondis qui font que l'expression booléenne <code>0.1 + 0.2 == 0.3</code> vaut <code>False</code> !</p>
+<p>C'est la raison pour laquelle il faut absolument éviter d'utiliser des conditions dans lesquelles on teste l'égalité entre deux flottants.</p>
+<p>Il est fortement recommandé de remplacer un test d'égalité <code>flottant1 == flottant2</code> par un test du type <code>abs(flottant1 - flottant2) &lt; 10**-n</code> qui est un <strong>test d'égalité approchée</strong> (avec <code>n</code> chiffres après la virgule de précision).</p>
+<details class="exo">
+<summary>Exercice 8-06 : Problèmes d'arrondis lors du calcul sur les flottants</summary>
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Constater sur des exemples les problèmes provoqués par la représentation approximative des flottants en machine.</li>
+<li>Utiliser des tests d'égalité approchée.</li>
+</ul>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/constr_elem/notebooks/8_06_ex_arrondis.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-d-exercices">Partie D - Exercices<a class="headerlink" href="#partie-d-exercices" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices 8-07 et 8-08</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Exercice 8-07 : Représentation sur 32 bits</label><label for="__tabbed_1_2">Exercice 8-08 : Variables et boucles</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/constr_elem/notebooks/8_07_ex_representation_32_bits.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/abd1-1763413">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition feuille">
+<p class="admonition-title">Énoncé</p>
+<p><strong>1.</strong> Donner la valeur décimale du nombre flottant dont la représentation sur 32 bits est :</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<p><code>1 01111110 11110000000000000000000</code>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>        **2.** Même question pour le nombre flottant dont la représentation sur 32 bits est : `0 10000011 11100000000000000000000`.
+
+=== &quot;Exercice 8-08 : Arrondis sur les flottants&quot;
+
+    !!! jupyter &quot;Carnet *Jupyter* à télécharger [ici](https://ntoulzac.github.io/Cours-NSI-Premiere/constr_elem/notebooks/8-08_ex_arrondis.ipynb)&quot;
+
+    !!! capytale &quot;Carnet *Jupyter* accessible sur [CAPYTALE](https://capytale2.ac-paris.fr/web/c/xxxxxxxxxxxx)&quot;
+</code></pre></div></td></tr></table></div>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Donner l'écriture scientifique décimale d'un nombre.</li>
+<li>Afficher l'écriture scientifique décimale d'un nombre <code>n</code> avec la commande <code>print("{:e}".format(n))</code></li>
+<li>Déterminer l'écriture binaire d'un entier positif.</li>
+<li>Afficher l'écriture binaire d'un entier avec la fonction <code>bin</code>.</li>
+<li>Déterminer l'écriture binaire d'un nombre décimal positif.</li>
+<li>Déterminer la représentation d'un nombre flottant sur 32 bits.</li>
+<li>Retrouver un flottant à partir de sa représentation sur 32 bits.</li>
+<li>Ne pas utiliser de test d'égalité sur les flottants, mais plutôt des tests d'égalité approchée.</li>
+</ul>
 
 
 

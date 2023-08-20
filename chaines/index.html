@@ -282,9 +282,88 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Chaînes de caractères
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Chaînes de caractères
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-representation-dun-texte-en-machine" class="md-nav__link">
+    Partie A - Représentation d'un texte en machine
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - Représentation d'un texte en machine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encodage-ascii" class="md-nav__link">
+    Encodage ASCII
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encodages-iso-8859" class="md-nav__link">
+    Encodages ISO 8859
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encodage-unicode-utf-8" class="md-nav__link">
+    Encodage Unicode (UTF-8)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-operations-sur-les-chaines-de-caracteres" class="md-nav__link">
+    Partie B - Opérations sur les chaînes de caractères
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-lecture-et-ecriture-dans-un-fichier" class="md-nav__link">
+    Partie C - Lecture et écriture dans un fichier
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -382,15 +461,74 @@
 
 
 <h1 id="chapitre-4-chaines-de-caracteres">Chapitre 4 : Chaînes de caractères<a class="headerlink" href="#chapitre-4-chaines-de-caracteres" title="Permanent link">⚓︎</a></h1>
-<p>Page en construction...</p>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees.ipynb">(énoncé)</a></p>
+<h2 id="partie-a-representation-dun-texte-en-machine">Partie A - Représentation d'un texte en machine<a class="headerlink" href="#partie-a-representation-dun-texte-en-machine" title="Permanent link">⚓︎</a></h2>
+<p>Pour stocker un <strong>texte</strong> dans la mémoire d'un ordinateur, pour transmettre un texte à une imprimante, pour envoyer un email, <em>etc.</em>, il est nécessaire de pouvoir <strong>encoder</strong> ce texte sous forme de bits, en associant à chaque caractère du texte une séquence de bits.</p>
+<p>Plusieurs difficultés apparaissent. Il faut que les différentes machines qui doivent manipuler le texte utilisent le même encodage. Cet encodage doit permettre de représenter le plus grand nombre de caractères différents possible, dont un certain nombre de caractères non imprimables qui permettent de signaler le début et la fin du texte, une nouvelle ligne, une tabulation, <em>etc.</em>. Enfin, il faut prendre garde que l'encodage ne nécessite pas un trop grand nombre de bits pour chaque caractère, faute de quoi le stockage en mémoire pourrait être peu optimal.</p>
+<h3 id="encodage-ascii">Encodage ASCII<a class="headerlink" href="#encodage-ascii" title="Permanent link">⚓︎</a></h3>
+<p>Dans les années 60 est apparue la norme ASCII (<em>American Standard Code for Information Interchange</em> ou <em>code américain normalisé pour l'échange d'information</em>) qui permet d'encoder 128 caractères sur 7 bits chacun :</p>
+<ul>
+<li>34 caractères non imprimables (dont l'espace), codés de <code>0</code> à <code>32</code> et <code>127</code>,</li>
+<li>10 chiffres indo-arabes, codés de <code>48</code> à <code>57</code>,</li>
+<li>26 lettres latines majuscules, codées de <code>65</code> à <code>90</code>,</li>
+<li>26 lettres latines minuscules, codées de <code>97</code> à <code>122</code>,</li>
+<li>32 autres signes (ponctuation, symboles mathématiques, etc.), codés de <code>33</code> à <code>47</code>, de <code>58`` à</code>64<code>`, de</code>91<code>à</code>96<code>et de</code>123<code>à</code>126`.</li>
+</ul>
+<p>Si <code>n</code> est un entier compris entre 33 et 126, alors l'expression <code>chr(n)</code> correspond au caractère associé à <code>n</code> dans l'encodage ASCII.</p>
+<p>Si <code>c</code> est un caractère ASCII, alors l'expression <code>ord(c)</code> correspond à l'entier associé au caractère <code>c</code>.</p>
+<details class="exo">
+<summary>Exercice 4-01 : Utilisation des fonctions <code>chr</code> et <code>ord</code></summary>
+<p><strong>Objectif :</strong> Travailler la correspondance entre caractères et entiers.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/chaines/notebooks/ex_4_01_chr_ord.ipynb">ici</a></p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees_corrigé.ipynb">(corrigé)</a></p>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxxxxxxxxx">CAPYTALE</a></p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+</details>
+<p>Voici la table ASCII complète :</p>
+<p><a href="https://ntoulzac.github.io/Cours-NSI-Premiere/chaines/images/table_ASCII.jpg">Table ASCII</a></p>
+<p>La norme ASCII permet d'écrire du texte en anglais, mais pas dans la très grande majorité des autres langues puisque seuls les caractères latins non accentués sont disponibles.</p>
+<h3 id="encodages-iso-8859">Encodages ISO 8859<a class="headerlink" href="#encodages-iso-8859" title="Permanent link">⚓︎</a></h3>
+<p>L'<em>Organisation Internationale de Normalisation</em> (ISO) a proposé seize extensions de la norme ASCII permettant de représenter 256 caractères sur 8 bits chacun : c'est la norme ISO 8859.</p>
+<p>Les 128 premiers caractères sont les mêmes que la norme ASCII. Les 128 derniers caractères dépendent de l'extension utilisée. En particulier, l'encodage <em>latin-1</em> (ISO 8859-1) permet d'écrire la plupart des langues d'Europe occidentale dont le français. D'autres encodages permettent d'écrire l'alphabet cyrillique (ISO 8859-5), arabe (ISO 8859-6), grec (ISO 8859-7), hébreu (ISO 8859-8), turc (ISO 8859-9).</p>
+<p>Si <code>n</code> est un entier compris entre 161 et 255, alors l'expression <code>chr(n)</code> correspond au caractère associé à <code>n</code> dans l'encodage <em>latin-1</em>.</p>
+<p>Si <code>c</code> est un caractère <em>latin-1</em>, alors l'expression <code>ord(c)</code> correspond à l'entier associé au caractère <code>c</code>.</p>
+<h3 id="encodage-unicode-utf-8">Encodage Unicode (UTF-8)<a class="headerlink" href="#encodage-unicode-utf-8" title="Permanent link">⚓︎</a></h3>
+<p>L'encodage ISO 8859 permet d'écrire des textes dans plusieurs langues, mais pas d'écrire un texte composé d'un mélange de caractères de plusieurs langues. C'est pourquoi l'ISO a mis au point un jeu de caractères universel (<em>Universal Character Set</em>) comprenant actuellement plus de 130 000 caractères codés sur 21 bits, et qui pourrait théoriquement en accueillir plus de quatre millions codés sur 32 bits. Les 256 premiers de ces caractères sont les mêmes que ceux de la norme <em>latin-1</em>.</p>
+<p>Cependant, l'utilisation de trois à quatre octets pour coder chaque caractère est très peu optimale puisque les caractères latins accentués sont tous codés entre 0 et 255 (1 octet) et les autres caractères les plus utilisés dans le monde sont codés entre 0 et 65 535 (2 octets).</p>
+<p>La norme Unicode a été mise au point pour remédier à ce problème. L'encodage UTF-8 (<em>Universal Transformation Format</em> 8 bits) permet ainsi que chaque caractère soit codé sur le moins d'octets possible, entre 1 et 4.</p>
+<p>Par défaut, Python encode les chaînes de caractères en UTF-8.</p>
+<p>Les fonctions <code>chr</code> et <code>ord</code> vues précédemment permettent en réalité d'associer un caractère et un code dans l'encodage UTF-8.</p>
+<h2 id="partie-b-operations-sur-les-chaines-de-caracteres">Partie B - Opérations sur les chaînes de caractères<a class="headerlink" href="#partie-b-operations-sur-les-chaines-de-caracteres" title="Permanent link">⚓︎</a></h2>
+<p>Une chaîne de caractères <em>vide</em> se note <code>''</code> ou <code>""</code>.</p>
+<p>La fonction <code>len</code> renvoie la <strong>longueur</strong> de la chaîne, c'est-à-dire son nombre de caractères.</p>
+<p>Le caractère numéro <code>k</code> de <code>chaine</code> s'obtient via l'expression <code>chaine[k]</code>, sachant que les caractères sont numérotés à partir de <code>0</code>.</p>
+<details class="exo">
+<summary>Exercice 4-XX : xxxxxxxxxxxxxxxxxxxxxx</summary>
+<p><strong>Objectif :</strong> xxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/chaines/notebooks/xxxxxxxxxx">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-c-lecture-et-ecriture-dans-un-fichier">Partie C - Lecture et écriture dans un fichier<a class="headerlink" href="#partie-c-lecture-et-ecriture-dans-un-fichier" title="Permanent link">⚓︎</a></h2>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Connaître quelques caractéristiques des encodages ASCII, ISO 8859 et Unicode.</li>
+<li>Parcourir les caractères d'une chaîne avec une boucle du type <code>for lettre in chaine:</code>.</li>
+<li>Concaténer plusieurs chaînes de caractères.</li>
+<li>Écrire une chaîne de caractères formatée (f-string).</li>
+<li>Ouvrir un fichier en lecture ou en écriture, en précisant l'encodage approprié.</li>
+<li>Lire le contenu d'un fichier texte, en intégralité ou ligne par ligne.</li>
+<li>Écrire dans un fichier texte, en écrasant ou non le contenu préexistant.</li>
+<li>Modifier la norme d'encodage un fichier texte.</li>
+<li>Utiliser les fonctions <code>chr</code> et <code>ord</code>.</li>
+<li>Déterminer le nombre de caractères d'une chaîne avec la fonction <code>len</code>.</li>
+<li>Accéder au <code>k</code>ème caractère d'une chaîne avec l'expression <code>chaine[k]</code>.</li>
+<li>Utiliser les instructions <code>upper()</code> et <code>lower()</code> pour mettre tous les caractères d'une chaîne en majuscule ou minuscule.</li>
+</ul>
 
 
 
