@@ -650,6 +650,47 @@
 </code></pre></div></td></tr></table></div>
 <p><strong>2.</strong> Quel effet est produit par l'exécution des lignes <code>3</code> à <code>5</code> ?</p>
 </div>
+<details class="solution">
+<summary>Corrigé</summary>
+<p><strong>1.</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">Ligne de code</th>
+<th align="center"><code>a</code></th>
+<th align="center"><code>b</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>a = 3</code></td>
+<td align="center">3</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>b = 7</code></td>
+<td align="center">3</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center"><code>a = a + b</code></td>
+<td align="center">10</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center"><code>b = a - b</code></td>
+<td align="center">10</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center"><code>a = a - b</code></td>
+<td align="center">7</td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2.</strong> L'exécution des lignes <code>3</code> à <code>5</code> entraîne un échange des valeurs des variables <code>a</code> et <code>b</code>.</p>
+</details>
 </details>
 <h3 id="tutor-magic"><em>Tutor Magic</em><a class="headerlink" href="#tutor-magic" title="Permanent link">⚓︎</a></h3>
 <p><em>Tutor Magic</em> est un outil qui permet, dans un carnet <em>Jupyter</em>, de suivre pas à pas la valeur des variables pendant l'exécution d'une séquence d'instructions.</p>
