@@ -481,6 +481,9 @@
 <div class="admonition capytale">
 <p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/d50d-1763658">CAPYTALE</a></p>
 </div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/notebooks/corr/2-01_ex_variables_expressions_booleennes_corr.ipynb">ici</a></p>
+</div>
 </details>
 <details class="activité">
 <summary>Activité 2-02 : Conjecture de Syracuse</summary>
@@ -494,6 +497,9 @@
 </div>
 <div class="admonition capytale">
 <p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/a066-1763659">CAPYTALE</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/booleens/notebooks/corr/2-02_act_syracuse_corr.ipynb">ici</a></p>
 </div>
 </details>
 <h2 id="partie-b-operateurs-logiques-et-tables-de-verite">Partie B - Opérateurs logiques et tables de vérité<a class="headerlink" href="#partie-b-operateurs-logiques-et-tables-de-verite" title="Permanent link">⚓︎</a></h2>
@@ -642,6 +648,57 @@
 </ul>
 <p>Sachant que le coupable et son complice mentent et que les deux innocents disent la vérité, déterminer qui est le coupable et qui est son complice.</p>
 </div>
+<details class="solution">
+<summary>Corrigé</summary>
+<p>Le tableau ci-dessous indique, pour chaque coupable potentiel, quels suspects disent la vérité ou mentent.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Nom du coupable potentiel</th>
+<th align="center">Témoignage de Donatello</th>
+<th align="center">Témoignage de Leonardo</th>
+<th align="center">Témoignage de Michelangelo</th>
+<th align="center">Témoignage de Raffaello</th>
+<th align="center">Nombre de menteurs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Donatello</td>
+<td align="center">mensonge</td>
+<td align="center">vérité</td>
+<td align="center">mensonge</td>
+<td align="center">vérité</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Leonardo</td>
+<td align="center">vérité</td>
+<td align="center">mensonge</td>
+<td align="center">vérité</td>
+<td align="center">vérité</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Michelangelo</td>
+<td align="center">mensonge</td>
+<td align="center">mensonge</td>
+<td align="center">mensonge</td>
+<td align="center">mensonge</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">Raffaello</td>
+<td align="center">vérité</td>
+<td align="center">vérité</td>
+<td align="center">vérité</td>
+<td align="center">mensonge</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p>La seule situation où il y a exactement deux menteurs est celle où Donatello est le coupable. Son complice est donc le second menteur, Michelangelo.</p>
+</details>
 </div>
 <div class="tabbed-block">
 <div class="admonition feuille">
