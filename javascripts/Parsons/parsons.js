@@ -3,77 +3,40 @@
    // regexp used for trimming
    var trimRegexp = /^\s*(.*?)\s*$/;
    var translations = {
-     fi: {
-       trash_label: 'Raahaa rivit ohjelmaasi tästä',
-       solution_label: 'Muodosta ratkaisusi tähän',
-       order: function() {
-         return "Ohjelma sisältää vääriä palasia tai palasten järjestys on väärä. Tämä on mahdollista korjata siirtämällä, poistamalla tai vaihtamalla korostettuja palasia.";},
-       lines_missing: function() {
-         return "Ohjelmassasi on liian vähän palasia, jotta se toimisi oikein.";},
-       lines_too_many: function() {
-         return "Ohjelmassasi on liian monta palasta, jotta se toimisi oikein.";},
-       no_matching: function(lineNro) {
-         return "Korostettu palanen (" + lineNro + ") on sisennetty kieliopin vastaisesti."; },
-       no_matching_open: function(lineNro, block) {
-         return "Rivillä " + lineNro + " päätettävää " + block +
-                 " lohkoa ei ole aloitettu."; },
-       no_matching_close: function(lineNro, block) {
-         return block + " lohkoa riviltä " + lineNro + " ei ole päätetty."; },
-       block_close_mismatch: function(closeLine, closeBlock, openLine, inBlock) {
-         return "Ei voi päättää lohkoa " + closeBlock + " rivillä " + closeLine +
-                " oltaessa vielä lohkossa " + inBlock + " riviltä " + openLine; },
-       block_structure: function(lineNro) {
-         return "Korostettu palanen (" + lineNro + ") on sisennetty väärään koodilohkoon."; },
-       unittest_error: function(errormsg) {
-         return "<span class='msg'>Virhe ohjelman jäsentämisessä/suorituksessa</span><br/> <span class='errormsg'>" + errormsg + "</span>";
-       },
-       unittest_output_assertion: function(expected, actual) {
-        return "Odotettu tulostus: <span class='expected output'>" + expected + "</span>" +
-              "Ohjelmasi tulostus: <span class='actual output'>" + actual + "</span>";
-       },
-       unittest_assertion: function(expected, actual) {
-        return "Odotettu arvo: <span class='expected'>" + expected + "</span><br>" +
-              "Ohjelmasi antama arvo: <span class='actual'>" + actual + "</span>";
-       },
-       variabletest_assertion: function(varname, expected, actual) {
-        return "Muuttujan " + varname + " odotettu arvo: <span class='expected'>" + expected + "</span> " +
-              "Ohjelmasi antama arvo: <span class='actual'>" + actual + "</span>";
-       }
-     },
      en: {
-       trash_label: 'Drag from here',
-       solution_label: 'Construct your solution here',
+       trash_label: 'Prenez des lignes dans cette colonne...',
+       solution_label: '... pour les placer dans celle-ci.',
        order: function() {
-         return "Code fragments in your program are wrong, or in wrong order. This can be fixed by moving, removing, or replacing highlighted fragments.";},
+         return "Certaines lignes sont incorrectes ou ne sont pas à leur place.";},
        lines_missing: function() {
-         return "Your program has too few code fragments.";},
+         return "Le code ne contient pas assez de lignes.";},
        lines_too_many: function() {
-         return "Your program has too many code fragments.";},
+         return "Le code contient trop de lignes.";},
        no_matching: function(lineNro) {
-         return "Based on language syntax, the highlighted fragment (" + lineNro + ") is not correctly indented."; },
+         return "La ligne (" + lineNro + ") n'est pas correctement indentée."; },
        no_matching_open: function(lineNro, block) {
-         return "The " + block + " ended on line " + lineNro + " never started."; },
+         return "Le " + block + " qui termine ligne " + lineNro + " n'a jamais commencé."; },
        no_matching_close: function(lineNro, block) {
-         return "Block " + block + " defined on line " + lineNro + " not ended properly";
+         return "Le bloc " + block + " qui commence ligne " + lineNro + " ne termine pas correctement.";
        },
        block_close_mismatch: function(closeLine, closeBlock, openLine, inBlock) {
-         return "Cannot end block " + closeBlock + " on line " + closeLine + " when still inside block " + inBlock + " started on line " + openLine;
+         return "Le bloc " + closeBlock + " ne peut pas terminer ligne " + closeLine + " alors qu'il est à l'intérieur du bloc " + inBlock + " qui commence ligne " + openLine + ".";
        },
-       block_structure: function(lineNro) { return "The highlighted fragment " + lineNro + " belongs to a wrong block (i.e. indentation)."; },
+       block_structure: function(lineNro) { return "La ligne " + lineNro + " n'est pas dans le bon bloc (problème d'indentation)."; },
        unittest_error: function(errormsg) {
-         return "<span class='msg'>Error in parsing/executing your program</span><br/> <span class='errormsg'>" + errormsg + "</span>";
+         return "<span class='msg'>Erreur lors de l'exécution</span><br/> <span class='errormsg'>" + errormsg + "</span>";
        },
        unittest_output_assertion: function(expected, actual) {
-        return "Expected output: <span class='expected output'>" + expected + "</span>" +
-              "Output of your program: <span class='actual output'>" + actual + "</span>";
+        return "Résultat attendu : <span class='expected output'>" + expected + "</span>" +
+              "Résultat obtenu : <span class='actual output'>" + actual + "</span>";
        },
        unittest_assertion: function(expected, actual) {
-        return "Expected value: <span class='expected'>" + expected + "</span><br>" +
-              "Actual value: <span class='actual'>" + actual + "</span>";
+        return "Valeur attendue : <span class='expected'>" + expected + "</span><br>" +
+              "Valeur obtenue : <span class='actual'>" + actual + "</span>";
        },
        variabletest_assertion: function(varname, expected, actual) {
-        return "Expected value of variable " + varname + ": <span class='expected'>" + expected + "</span><br>" +
-              "Actual value: <span class='actual'>" + actual + "</span>";
+        return "Valeur attendue pour la variable " + varname + " : <span class='expected'>" + expected + "</span><br>" +
+              "Valeur obtenue : <span class='actual'>" + actual + "</span>";
        }
      }
    };

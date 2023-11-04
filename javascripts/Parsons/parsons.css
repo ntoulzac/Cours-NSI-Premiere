@@ -6,33 +6,31 @@
     margin-left: 2%;
     float: left;
 }
-#sortableTrash { width: 38%; }
-#sortable { width: 56%; }
+#sortableTrash { width: 45%; }
+#sortable { width: 45%; }
 .sortable-code ul {
     font-size: 120%;
     font-family: monospace;
     list-style: none;
-    background-color: #efefff;
-    padding-bottom: 10px;
-    padding-left: 0;
-    margin-left: 0;
-    border: 1px solid #efefff;;
+    background-color: #d0d0d0;
+    padding: 0px 5px 5px 5px;
+    border: 2px solid #a0a0a0;;
 }
 .sortable-code ul:empty {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .sortable-code li, .sortable-code li:before, .sortable-code li:after {
   box-sizing: content-box;
 }
 ul.output {
-    background-color: #FFA;
+    background-color: #f0f0f0;
 }
 .sortable-code li {
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     border-radius: 10px;
-    background-color:#EFEFEF;
-    border:1px solid lightgray;
+    background-color:#f0f0f0;
+    border:2px solid #c0c0c0;
     padding:10px;
     margin-top: 5px;
     white-space: nowrap;
@@ -44,7 +42,7 @@ ul.output {
 }
 
 ul.incorrect {
-    border: 1px solid red;
+    border: 2px solid red;
     background-color: #ffefef;
 }
 
@@ -54,31 +52,32 @@ ul.correct {
 }
 
 li.incorrectIndent {
-    border: 1px solid red;
+    border: 2px solid red;
     border-left: 10px solid red;
 }
 
 li.correctIndent {
-    border: 1px solid green;
+    border: 2px solid green;
     border-left: 10px solid green;
 }
 
 li.incorrectPosition, .testcase.fail, .testcase.error {
     background-color: #FFBABA;
-    border:1px solid red;
+    border:2px solid red;
 }
 
 li.correctPosition, .testcase.pass {
     background-color: #DFF2BF;
-    border:1px solid green;
+    border:2px solid green;
 }
 
-.testcase { padding: 10px; margin-bottom: 10px;}
-.testcase .msg { font-weight: bold; }
-.testcase .error { color: red;}
-.testcase .feedback { font-weight: bolder;}
+.testcase { padding: 10px; margin-bottom: 10px; border:2px;}
+.testcase .msg { font-weight: bold; border:2px;}
+.testcase .error { color: red;border:2px;}
+.testcase .feedback { font-weight: bolder;border:2px;}
 .testcase .fail .expected, .testcase .fail .actual {
     color: red; 
+    border:2px;
     font-weight: bolder;
 }
 .testcase .output { 
@@ -87,6 +86,7 @@ li.correctPosition, .testcase.pass {
     background-color: #555555;
     color: white;
     font-size: 12px;
+    border:2px;    
     line-height: 15px;
     margin: 5px;
     padding: 5px;
@@ -95,17 +95,19 @@ li.correctPosition, .testcase.pass {
 .jsparson-toggle {
     padding: 0 15px;
     display: inline-block;
-    border: 1px dashed black;
+    border: 2px dashed black;
     z-index: 500;
     cursor: pointer;
     min-width: 10px;
     min-height: 15px;
 }
 .jsparson-toggle:empty {
+border:2px;
     border-color: red;
 }
 .jsparson-toggle:empty:before {
     content: "??";
     display: block;
+border:2px;
     color: red;
 }
