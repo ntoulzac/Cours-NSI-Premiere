@@ -1,5 +1,3 @@
 <?php
-	if ($_POST) {
-		echo "<b> Bonjour" . $_POST['nom'] . " !</b>";
-	}
+	echo "<b> Bonjour" . $_POST['nom'] . " !</b>";
 ?>
