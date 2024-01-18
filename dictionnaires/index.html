@@ -312,9 +312,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          p-uplets et dictionnaires
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         p-uplets et dictionnaires
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-p-uplets" class="md-nav__link">
+    Partie A - p-uplets
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - p-uplets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notion-de-p-uplet" class="md-nav__link">
+    Notion de p-uplet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-des-p-uplets-pour-permettre-a-une-fonction-de-retourner-plusieurs-valeurs" class="md-nav__link">
+    Utilisation des p-uplets pour permettre à une fonction de retourner plusieurs valeurs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-dictionnaires" class="md-nav__link">
+    Partie B - Dictionnaires
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-que-vous-devez-savoir" class="md-nav__link">
+    Ce que vous devez savoir
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -384,6 +449,56 @@
 <h1 id="chapitre-6-p-uplets-et-dictionnaires">Chapitre 6 : p-uplets et dictionnaires<a class="headerlink" href="#chapitre-6-p-uplets-et-dictionnaires" title="Permanent link">⚓︎</a></h1>
 <p>Cours et exercices à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/chap_6.zip">ici</a>.</p>
 <p>Page en construction...</p>
+<h2 id="partie-a-p-uplets">Partie A - p-uplets<a class="headerlink" href="#partie-a-p-uplets" title="Permanent link">⚓︎</a></h2>
+<h3 id="notion-de-p-uplet">Notion de p-uplet<a class="headerlink" href="#notion-de-p-uplet" title="Permanent link">⚓︎</a></h3>
+<p>Un <strong>p-uplet</strong> permet, comme un tableau, de stocker en mémoire plusieurs valeurs dans une seule variable. En Python, le type p-uplet est appelé <code>tuple</code>.</p>
+<p>Les extrémités du p-uplet sont repérées par des <strong>parenthèses</strong> et les valeurs sont séparées par des virgules.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">date</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;La prise de la Bastille&#39;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1789</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Comme pour un tableau, les valeurs contenues dans un p-uplet sont <strong>indexées par des entiers</strong>, à partir de l'index <code>0</code>, et la fonction <code>len</code> permet de connaître le nombre de valeurs contenues dans le p-uplet.</p>
+<p>L'instruction...</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> a eu lieu le </span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Longueur : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">date</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>... provoque l'affichage...</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>La prise de la Bastille a eu lieu le 14/7/1789.
+Longueur : 4
+</code></pre></div></td></tr></table></div>
+<p>Mais, à la différence d'un tableau, il n'est pas possible de modifier les valeurs contenues dans un p-uplet, ou d'en ajouter. On parle d'<strong>immutabilité</strong>.</p>
+<p>Les affectations suivantes provoquent une erreur :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">date</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;La fête de la Fédération&quot;</span>
+<span class="n">date</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1790</span>
+</code></pre></div></td></tr></table></div>
+<p>Seule une redéfinition complète du p-uplet est possible.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">date</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;La fête de la Fédération&#39;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1790</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> a eu lieu le </span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">date</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>On obtient alors l'affichage :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>La fête de la Fédération a eu lieu le 14/7/1790.
+</code></pre></div></td></tr></table></div>
+<h3 id="utilisation-des-p-uplets-pour-permettre-a-une-fonction-de-retourner-plusieurs-valeurs">Utilisation des p-uplets pour permettre à une fonction de retourner plusieurs valeurs<a class="headerlink" href="#utilisation-des-p-uplets-pour-permettre-a-une-fonction-de-retourner-plusieurs-valeurs" title="Permanent link">⚓︎</a></h3>
+<h2 id="partie-b-dictionnaires">Partie B - Dictionnaires<a class="headerlink" href="#partie-b-dictionnaires" title="Permanent link">⚓︎</a></h2>
+<p>Les éléments d'un tableau ou d'un p-uplet sont toujours indexés par des entiers positifs, ce qui peut rendre leur manipulation délicate ou créer des confusions.</p>
+<p>En reprenant l'exemple des pays de l'UE traité précédemment, il est nécessaire de se souvenir que chaque pays est représenté par un p-uplet dont la première valeur est le nom du pays, la deuxième la population et la troisième la superficie.</p>
+<p>Si on souhaite que les valeurs soient <strong>indexées par des mots-clés</strong> plutôt que par des entiers, on utilise un type de variable particulier : un <strong>dictionnaire</strong>.</p>
+<p>Les extrémités d'un dictionnaire sont repérées par des <strong>accolades</strong>. Chaque valeur est précédée d'une clé, avec la syntaxe <code>cle : valeur</code>, et les associations clé-valeur sont séparées les unes des autres par des virgules.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">pays</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;la France&quot;</span><span class="p">,</span> <span class="s2">&quot;population&quot;</span><span class="p">:</span> <span class="mi">66661</span><span class="p">,</span> <span class="s2">&quot;superficie&quot;</span><span class="p">:</span> <span class="mi">544000</span><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="ce-que-vous-devez-savoir">Ce que vous devez savoir<a class="headerlink" href="#ce-que-vous-devez-savoir" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Définir un p-uplet.</li>
+<li>Accéder aux valeurs contenues dans un p-uplet via leur index.</li>
+<li>Utiliser la fonction <code>round</code> pour arrondir une valeur numérique.</li>
+<li>Utiliser la fonction <code>clear_output</code> effacer l'affichage sous la cellule en cours d'exécution.</li>
+<li>Définir un dictionnaire en listant ses associations clé-valeur.</li>
+<li>Utiliser sur un dictionnaire la fonction <code>len</code> et les commandes <code>.keys()</code>, <code>.values()</code> et <code>.items()</code>.</li>
+<li>Écrire une assertion permettant de vérifier qu'un dictionnaire dispose de certaines clés.</li>
+<li>Ajouter ou supprimer des associations clé/valeur dans un dictionnaire.</li>
+</ul>
 
 
 

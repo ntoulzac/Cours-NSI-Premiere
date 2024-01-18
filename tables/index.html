@@ -327,9 +327,88 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tables de données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Tables de données
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-representation-de-donnees-en-tables" class="md-nav__link">
+    Partie A - Représentation de données en tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - Représentation de données en tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-csv" class="md-nav__link">
+    Format CSV
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-recherche-dans-une-table" class="md-nav__link">
+    Partie B - Recherche dans une table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-tri-dune-table" class="md-nav__link">
+    Partie C - Tri d'une table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-d-fusion-de-deux-tables" class="md-nav__link">
+    Partie D - Fusion de deux tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-e-exercices-et-activites" class="md-nav__link">
+    Partie E - Exercices et activités
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-que-vous-devez-savoir" class="md-nav__link">
+    Ce que vous devez savoir
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -383,7 +462,61 @@
 
 <h1 id="chapitre-7-tables-de-donnees">Chapitre 7 : Tables de données<a class="headerlink" href="#chapitre-7-tables-de-donnees" title="Permanent link">⚓︎</a></h1>
 <p>Cours et exercices à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/chap_7.zip">ici</a>.</p>
-<p>Page en construction...</p>
+<h2 id="partie-a-representation-de-donnees-en-tables">Partie A - Représentation de données en tables<a class="headerlink" href="#partie-a-representation-de-donnees-en-tables" title="Permanent link">⚓︎</a></h2>
+<p>Une  des  utilisations  principales  de  l’informatique  de  nos  jours  est  le  <strong>traitement  de  quantités  importantes  de  données</strong>  dans  des domaines très variés. Par exemple, un site de commerce en ligne peut avoir à gérer des bases de données pour des dizaines de milliers d’articles en vente, de clients, de commandes. Un hopital doit pouvoir accéder efficacement à tous les détails de traitements de ses patients, etc.</p>
+<p>Mais si les logiciels de traitement de base de données sont des programmes hautement spécialisés pour effectuer ce genre de tâches le plus efficacement possible, il est facile de mettre en œuvre les opérations de base dans un langage de programmation comme Python. C'est l'objectif de ce chapitre.</p>
+<h3 id="format-csv">Format CSV<a class="headerlink" href="#format-csv" title="Permanent link">⚓︎</a></h3>
+<p>Le <strong>format CSV</strong> (pour <em>comma separated values</em>, c'est-à-dire <em>valeurs séparées par des virgules</em>) est un format de fichier texte très pratique pour représenter des données structurées. Dans ce format, chaque ligne représente un <strong>enregistrement</strong> et chaque colonne représente un <strong>champ</strong> de l’enregistrement. Les champs sont séparés par une virgule, d’où le nom CSV.</p>
+<p>En pratique, on peut choisir le caractère utilisé pour  séparer  les  différents  champs  et  on  utilise  parfois, plutôt qu'une virgule,  un  point-virgule,  une  tabulation, deux  points ou une barre verticale.
+Nous pouvons enfin remarquer que la première ligne d’un tel fichier est généralement utilisée pour indiquer le <strong>nom des différents champs</strong>. Dans ce cas, le premier enregistrement apparaît sur la deuxième ligne du fichier et non sur la première.</p>
+<details class="activité">
+<summary>Activité 7-01 : Préfectures des départements</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tables/notebooks/7-xx_ex_population_france.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-b-recherche-dans-une-table">Partie B - Recherche dans une table<a class="headerlink" href="#partie-b-recherche-dans-une-table" title="Permanent link">⚓︎</a></h2>
+<h2 id="partie-c-tri-dune-table">Partie C - Tri d'une table<a class="headerlink" href="#partie-c-tri-dune-table" title="Permanent link">⚓︎</a></h2>
+<h2 id="partie-d-fusion-de-deux-tables">Partie D - Fusion de deux tables<a class="headerlink" href="#partie-d-fusion-de-deux-tables" title="Permanent link">⚓︎</a></h2>
+<h2 id="partie-e-exercices-et-activites">Partie E - Exercices et activités<a class="headerlink" href="#partie-e-exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices 7-xx à 7-xx</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Exercice 7-xx : Populations départementales</label><label for="__tabbed_1_2">Exercice 7-xx : Émissions de CO2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tables/notebooks/7-xx_ex_population_france.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tables/notebooks/7-xx_ex_emissions_co2.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/xxxxxxxxxx">CAPYTALE</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h2 id="ce-que-vous-devez-savoir">Ce que vous devez savoir<a class="headerlink" href="#ce-que-vous-devez-savoir" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Importer une table de données depuis un fichier CSV, et stocker le résultat sous forme de tableau de dictionnaires.</li>
+<li>Valider les données, c'est-à-dire modifier leur type pour les rendre utilisables.</li>
+<li>Afficher des données sélectionnées dans une table.</li>
+<li>Compter des données sélectionnées dans une table.</li>
+<li>Définir une fonction de tri utilisable comme argument de la commande <code>.sort()</code> ou de la fonction <code>sorted</code>.</li>
+<li>Utiliser l'argument <code>reverse = True</code> pour effectuer un tri dans l'ordre décroissant.</li>
+<li>Choisir entre la commande <code>.sort()</code> et la fonction <code>sorted</code> en fonction du contexte.</li>
+<li>Fusionner les données contenues dans deux tables.</li>
+<li>Exporter les données dans un fichier CSV.</li>
+</ul>
 
 
 
