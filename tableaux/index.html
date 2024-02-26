@@ -297,9 +297,129 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tableaux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Tableaux
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-notion-de-tableau" class="md-nav__link">
+    Partie A - Notion de tableau
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - Notion de tableau">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-dun-tableau-en-extension" class="md-nav__link">
+    Définition d'un tableau en extension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-aux-valeurs-grace-a-leur-indice" class="md-nav__link">
+    Accès aux valeurs grâce à leur indice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modification-des-valeurs-grace-a-leur-indice" class="md-nav__link">
+    Modification des valeurs grâce à leur indice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-dun-tableau-en-comprehension" class="md-nav__link">
+    Définition d'un tableau en compréhension
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-tri-dun-tableau-algorithmes-de-tri-par-selection-et-de-tri-par-insertion" class="md-nav__link">
+    Partie B - Tri d'un tableau : algorithmes de tri par sélection et de tri par insertion
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie B - Tri d'un tableau : algorithmes de tri par sélection et de tri par insertion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectif" class="md-nav__link">
+    Objectif
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tri-par-selection" class="md-nav__link">
+    Tri par sélection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tri-par-insertion" class="md-nav__link">
+    Tri par insertion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-tableaux-a-plusieurs-dimensions" class="md-nav__link">
+    Partie C - Tableaux à plusieurs dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-d-exercices-et-activites" class="md-nav__link">
+    Partie D - Exercices et activités
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -382,8 +502,234 @@
 
 
 <h1 id="chapitre-5-tableaux">Chapitre 5 : Tableaux<a class="headerlink" href="#chapitre-5-tableaux" title="Permanent link">⚓︎</a></h1>
-<p>Cours et exercices à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/chap_5.zip">ici</a>.</p>
-<p>Page en construction...</p>
+<h2 id="partie-a-notion-de-tableau">Partie A - Notion de tableau<a class="headerlink" href="#partie-a-notion-de-tableau" title="Permanent link">⚓︎</a></h2>
+<h3 id="definition-dun-tableau-en-extension">Définition d'un tableau en extension<a class="headerlink" href="#definition-dun-tableau-en-extension" title="Permanent link">⚓︎</a></h3>
+<p>Un <strong>tableau</strong> permet de stocker en mémoire plusieurs valeurs dans une seule variable.</p>
+<p>Une façon de définir un tableau est d'indiquer <strong>entre crochets</strong> les différentes valeurs, séparées par des virgules. On parle alors de <strong>définition en extension</strong>.</p>
+<p>Par exemple, le tableau <code>jours</code> défini ci-dessous contient sept chaînes de caractères :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">jours</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lundi&quot;</span><span class="p">,</span> <span class="s2">&quot;mardi&quot;</span><span class="p">,</span> <span class="s2">&quot;mercredi&quot;</span><span class="p">,</span> <span class="s2">&quot;jeudi&quot;</span><span class="p">,</span> <span class="s2">&quot;vendredi&quot;</span><span class="p">,</span> <span class="s2">&quot;samedi&quot;</span><span class="p">,</span> <span class="s2">&quot;dimanche&quot;</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="acces-aux-valeurs-grace-a-leur-indice">Accès aux valeurs grâce à leur indice<a class="headerlink" href="#acces-aux-valeurs-grace-a-leur-indice" title="Permanent link">⚓︎</a></h3>
+<p>Chaque valeur contenue dans un tableau est <strong>indexée par un entier</strong> supérieur ou égal à <code>0</code>. Dans la mémoire de la machine, les valeurs sont stockées consécutivement. Pour accéder à la valeur d'indice <code>n</code> d'un tableau <code>tab</code>, on utilise la notation <code>tab[n]</code>.</p>
+<h3 id="modification-des-valeurs-grace-a-leur-indice">Modification des valeurs grâce à leur indice<a class="headerlink" href="#modification-des-valeurs-grace-a-leur-indice" title="Permanent link">⚓︎</a></h3>
+<p>Pour modifier la valeur d'indice <code>n</code> contenue dans le tableau <code>tab</code>, il suffit d'utiliser une affectation du type <code>tab[n] = nouvelle_valeur</code>.</p>
+<p>Mais si on tente d'accéder ou de modifier, dans un tableau, une valeur située à un indice qui n'existe pas, alors <strong>une erreur se produit</strong>.</p>
+<p>Par exemple, pour le tableau <code>jours</code> défini précédemment, les sept valeurs ont des indices compris entre <code>0</code> et <code>6</code>. Si on essaie d'accéder à la valeur d'indice <code>7</code>, une erreur se produit.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</code></pre></div></td></tr></table></div>
+<details class="exo">
+<summary>Exercice 5-01 : Tableaux définis en extension</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-01_ex_tableaux_extension.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/64fa-3024312">CAPYTALE</a></p>
+</div>
+</details>
+<h3 id="definition-dun-tableau-en-comprehension">Définition d'un tableau en compréhension<a class="headerlink" href="#definition-dun-tableau-en-comprehension" title="Permanent link">⚓︎</a></h3>
+<p>Si on souhaite stocker dans un tableau les carrés des entiers compris entre 0 et 10, on peut définir le tableau en extension :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<p>On constate qu'une telle définition n'est pas pratique, voire impossible à mettre en œuvre si le nombre de valeurs dans le tableau est grand.</p>
+<p>On utilise alors une autre façon de définir le tableau : la <strong>définition en compréhension</strong>, qui est basée sur la notion de <strong>boucle</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span>
+</code></pre></div></td></tr></table></div>
+<p>Il faut comprendre qu'on affecte à la variable <code>tab</code> un tableau contenant les valeurs de <code>k*k</code> (soit <code>k</code> au carré) pour tous les entiers <code>k</code> compris entre <code>0</code> et <code>10</code> (c'est-à-dire les valeurs entières auxquelles correspondent <code>range(11)</code>).</p>
+<p>Il est également possible d'ajouter une <strong>condition</strong> à la définition en compréhension.</p>
+<p>Par exemple, pour obtenir le carré des nombres pairs compris entre 0 et 10, on écrit :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<p>Pour définir, par exemple, un tableau qui contient 100 fois la valeur 0, on peut écrire :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+</code></pre></div></td></tr></table></div>
+<p>ou alors, de façon encore plus simple, utiliser l'opérateur <code>*</code> :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
+</code></pre></div></td></tr></table></div>
+<p>Enfin, l'opérateur <code>+</code> permet de <strong>concaténer</strong> (c'est-à-dire mettre bout à bout) plusieurs tableaux. Par exemple, le tableau :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<p>est le tableau défini en compréhension qui correspond au tableau défini en extension :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<details class="exo">
+<summary>Exercice 5-02 : Tableaux définis en compréhension</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-01_ex_tableaux_comprehension.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/0d8d-3024314">CAPYTALE</a></p>
+</div>
+</details>
+<p>Remarquons enfin qu'<em>en théorie</em> la taille d'un tableau est fixée et ne peut pas être modifiée. En Python, les tableaux sont en réalité des <em>tableaux dynamiques</em> pour lesquels il est possible d'ajouter ou de retirer des éléments. Nous verrons en Terminale que ce comportement est celui des <em>listes</em> et non des <em>tableaux</em>.</p>
+<ul>
+<li>Pour ajouter un élément à la fin de <code>tab</code>, on utilise l'instruction <code>tab.append(element)</code>.</li>
+<li>Pour ajouter un élément à l'indice <code>n</code> dans <code>tab</code>, on utilise l'instruction <code>tab.insert(n, element)</code>.</li>
+<li>Pour supprimer l'élément d'indice <code>n</code> dans <code>tab</code>, on utilise l'instruction <code>del tab[n]</code>.</li>
+</ul>
+<h2 id="partie-b-tri-dun-tableau-algorithmes-de-tri-par-selection-et-de-tri-par-insertion">Partie B - Tri d'un tableau : algorithmes de tri par sélection et de tri par insertion<a class="headerlink" href="#partie-b-tri-dun-tableau-algorithmes-de-tri-par-selection-et-de-tri-par-insertion" title="Permanent link">⚓︎</a></h2>
+<h3 id="objectif">Objectif<a class="headerlink" href="#objectif" title="Permanent link">⚓︎</a></h3>
+<p>Le but de cette partie est d'étudier deux algorithmes permettant de <strong>trier les élements d'un tableau du plus petit au plus grand</strong>. Les éléments peuvent être des nombres mais aussi, par exemple, des chaînes de caractères (ou tout autre objet dont le type possède un <em>ordre total</em>, c'est-à-dire un ordre pour lequel tout élément peut être comparé à tout autre élément).</p>
+<h3 id="tri-par-selection">Tri par sélection<a class="headerlink" href="#tri-par-selection" title="Permanent link">⚓︎</a></h3>
+<p>Le principe du <strong>tri par sélection</strong> est le suivant :</p>
+<ul>
+<li>On parcourt le tableau de la gauche vers la droite, en définissant une partie gauche déjà triée et une partie droite pas encore triée.</li>
+<li>On détermine quel est le plus petit élément de la partie de droite, et on l'échange avec le premier élément de la partie de droite.</li>
+</ul>
+<p>De cette façon, la partie de gauche du tableau est triée en permanence, et les éléments y sont placés à leur position définitive.</p>
+<p><img alt="Tri par sélection" src="https://ntoulzac.github.io/Cours-NSI-Terminale/tableaux/images/tri_selection.gif" /></p>
+<p><em>En vert, la partie gauche du tableau est triée. En rouge, la partie droite a tous ses éléments plus grands que les éléments de la partie gauche.</em></p>
+<div>
+<p><b>Algorithme de tri par sélection</b></p>
+<p><b>Début</b></p>
+<p STYLE="padding:0 0 0 40px;"><code>n</code> ← longueur du tableau <code>tab</code></p>
+<p STYLE="padding:0 0 0 40px;">Pour <code>k</code> allant de 0 à (<code>n</code>-2) faire</p>
+<p STYLE="padding:0 0 0 80px;"><code>i</code> ← indice du plus petit élement de <code>tab</code> dont l'indice est compris entre <code>k</code> et (<code>n</code>-1)</p>
+<p STYLE="padding:0 0 0 80px;">Echanger le <code>k</code>ème élement et le <code>i</code>ème élement du tableau <code>tab</code></p>
+<p STYLE="padding:0 0 0 40px;">Fin Pour</p>
+<p><b>Fin</b></p>
+</div>
+
+<details class="activité">
+<summary>Activité 5-03 : Tri par sélection</summary>
+<p><strong>Objectif :</strong> Comprendre et implémenter l'algorithme de tri par sélection.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-03_act_tri_selection.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/f76b-3024317">CAPYTALE</a></p>
+</div>
+</details>
+<h3 id="tri-par-insertion">Tri par insertion<a class="headerlink" href="#tri-par-insertion" title="Permanent link">⚓︎</a></h3>
+<p>Le principe du <strong>tri par insertion</strong> est le suivant :</p>
+<ul>
+<li>On parcourt le tableau de la gauche vers la droite, en définissant une partie gauche déjà triée et une partie droite pas encore triée.</li>
+<li>On déplace le premier élément de la partie de droite au bon endroit dans la partie de gauche.</li>
+</ul>
+<p>De cette façon, la partie de gauche du tableau est triée en permanence mais les éléments n'y sont pas placés à leur position définitive.</p>
+<p><img alt="Tri par insertion" src="https://ntoulzac.github.io/Cours-NSI-Terminale/tableaux/images/tri_insertion.gif" /></p>
+<p><em>En vert, la partie gauche du tableau est triée. En rouge, le premier élément de la partie droite doit être inséré au bon endroit dans la partie gauche.</em></p>
+<div>
+    <p><b>Algorithme de tri par insertion</b></p>
+<p><b>Début</b></p>
+<p STYLE="padding:0 0 0 40px;"><code>n</code> ← longueur du tableau <code>tab</code></p>
+<p STYLE="padding:0 0 0 40px;">Pour <code>k</code> allant de <code>1</code> à (<code>n</code>-1) faire</p>
+<p STYLE="padding:0 0 0 80px;"><code>valeur</code> ← <code>tab[k]</code></p>
+<p STYLE="padding:0 0 0 80px;"><code>pos</code> ← <code>k</code></p>
+    <p STYLE="padding:0 0 0 80px;">Tant que <code>pos</code> &gt; 0 et <code>tab[pos - 1]</code> &gt; <code>valeur</code> faire</p>
+<p STYLE="padding:0 0 0 120px;"><code>tab[pos]</code> ← <code>tab[pos - 1]</code></p>
+<p STYLE="padding:0 0 0 120px;"><code>pos</code> ← <code>pos - 1</code></p>
+<p STYLE="padding:0 0 0 80px;">Fin Tant que</p>
+<p STYLE="padding:0 0 0 80px;"><code>tab[pos]</code> ← <code>valeur</code></p>
+<p STYLE="padding:0 0 0 40px;">Fin Pour</p>
+<p><b>Fin</b></p>
+</div>
+
+<details class="activité">
+<summary>Activité 5-04 : Tri par insertion</summary>
+<p><strong>Objectif :</strong> Comprendre et implémenter l'algorithme de tri par insertion, puis comparer son efficacité avec celle de l'algorithme de tri par sélection.</p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-04_act_tri_insertion.zip">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/3b03-3024319">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-c-tableaux-a-plusieurs-dimensions">Partie C - Tableaux à plusieurs dimensions<a class="headerlink" href="#partie-c-tableaux-a-plusieurs-dimensions" title="Permanent link">⚓︎</a></h2>
+<p>Nous avons vu jusqu'à présent des tableaux contenant des valeurs de type entier ou de type chaîne de caractères, mais les valeurs peuvent en réalité être de n'importe quel type.</p>
+<p>En particulier, un tableau peut contenir des tableaux. On parle alors de <strong>tableau à deux dimensions</strong>.</p>
+<p>Par exemple, le tableau <code>union_europeenne</code> défini ci-dessous est un tableau à deux dimensions contenant 27 tableaux qui correspondent à chaque état-membre de l'UE. On stocke en mémoire l'équivalent d'un tableau composé de 27 lignes et 2 colonnes.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">union_europeenne</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;Allemagne&quot;</span><span class="p">,</span> <span class="s2">&quot;Berlin&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Belgique&quot;</span><span class="p">,</span> <span class="s2">&quot;Bruxelles&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="s2">&quot;Paris&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Luxembourg&quot;</span><span class="p">,</span> <span class="s2">&quot;Luxembourg&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Italie&quot;</span><span class="p">,</span> <span class="s2">&quot;Rome&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Pays-Bas&quot;</span><span class="p">,</span> <span class="s2">&quot;Amsterdam&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Danemark&quot;</span><span class="p">,</span> <span class="s2">&quot;Copenhague&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Irlande&quot;</span><span class="p">,</span> <span class="s2">&quot;Dublin&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Grèce&quot;</span><span class="p">,</span> <span class="s2">&quot;Athènes&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Espagne&quot;</span><span class="p">,</span> <span class="s2">&quot;Madrid&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Portugal&quot;</span><span class="p">,</span> <span class="s2">&quot;Lisbonne&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Autriche&quot;</span><span class="p">,</span> <span class="s2">&quot;Vienne&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Finlande&quot;</span><span class="p">,</span> <span class="s2">&quot;Helsinki&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Suède&quot;</span><span class="p">,</span> <span class="s2">&quot;Stockholm&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Chypre&quot;</span><span class="p">,</span> <span class="s2">&quot;Nicosie&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Estonie&quot;</span><span class="p">,</span> <span class="s2">&quot;Tallinn&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Hongrie&quot;</span><span class="p">,</span> <span class="s2">&quot;Budapest&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Lettonie&quot;</span><span class="p">,</span> <span class="s2">&quot;Riga&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Lituanie&quot;</span><span class="p">,</span> <span class="s2">&quot;Vilnius&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Malte&quot;</span><span class="p">,</span> <span class="s2">&quot;La Valette&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Pologne&quot;</span><span class="p">,</span> <span class="s2">&quot;Varsovie&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;République Tchèque&quot;</span><span class="p">,</span> <span class="s2">&quot;Prague&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Slovaquie&quot;</span><span class="p">,</span> <span class="s2">&quot;Bratislava&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Slovénie&quot;</span><span class="p">,</span> <span class="s2">&quot;Ljubljana&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Bulgarie&quot;</span><span class="p">,</span> <span class="s2">&quot;Sofia&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Roumanie&quot;</span><span class="p">,</span> <span class="s2">&quot;Bucarest&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Croatie&quot;</span><span class="p">,</span> <span class="s2">&quot;Zagreb&quot;</span><span class="p">]</span>
+<span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<p>L'élément du tableau <code>union_européenne</code> d'indice <code>2</code> est un tableau contenant des chaînes de caractères.</p>
+<p>Il correspond à la troisième ligne de <code>union_europeenne</code>.</p>
+<p>Dans un tableau à deux dimensions, on utilise une <strong>double indexation</strong> pour accéder aux éléments du tableau. Le premier indice correspond au numéro de ligne (ici l'indice du pays dans le tableau <code>union_europeenne</code>) et le second au numéro de colonne (ici <code>0</code> pour le nom du pays et <code>1</code> pour sa capitale).</p>
+<p>Par exemple, l'instruction :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">union_europeenne</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2"> est la capitale de </span><span class="si">{</span><span class="n">union_europeenne</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>affiche à l'écran la chaîne <code>"Paris est la capitale de France."</code></p>
+<details class="exo">
+<summary>Exercice 5-05 : Tableau à deux dimensions</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-05_ex_tableau_2d.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/aa62-3024323">CAPYTALE</a></p>
+</div>
+</details>
+<h2 id="partie-d-exercices-et-activites">Partie D - Exercices et activités<a class="headerlink" href="#partie-d-exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices 5-06 et 5-07</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Exercice 5-06 : Fonction mystère</label><label for="__tabbed_1_2">Exercice 5-07 : Tables d'addition et de multiplication</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-06_ex_fonction_mystere.ipynb">ici</a></p>
+</div>
+<div class="admonition capytale">
+<p class="admonition-title">Carnet <em>Jupyter</em> accessible sur <a href="https://capytale2.ac-paris.fr/web/c/60ef-3024327">CAPYTALE</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-07_ex_table_addition.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="activité">
+<summary>Activités 5-08 et 5-09</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Activité 5-08 : Fonctions et procédures avec des tableaux</label><label for="__tabbed_2_2">Activité 5-09 : Cases grises</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-08_act_fonctions_diverses.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Premiere/tableaux/notebooks/5-09_act_cases_grises.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Définir un tableau en extension.</li>
+<li>Utiliser la fonction <code>len</code> pour déterminer le nombre d'éléments d'un tableau.</li>
+<li>Accéder à, ou modifier, une valeur contenue dans un tableau, à partir de son indice.</li>
+<li>Éviter les erreurs en se souvenant que les indices des éléments d'un <code>tableau</code></code> sont compris entre <code>0</code> et <code>len(tableau)-1</code>.</li>
+<li>Définir un tableau en compréhension.</li>
+<li>Utiliser les opérateurs <code>*</code> et <code>+</code> sur des tableaux.</li>
+<li>Connaître l'algorithme de tri par sélection.</li>
+<li>Connaître l'algorithme de tri par insertion.</li>
+<li>Savoir que l'algorithme de tri par sélection a une complexité quadratique dans tous les cas.</li>
+<li>Savoir que l'algorithme de tri par insertion a une complexité quadratique dans le pire des cas, et une complexité linéaire dans le meilleur des cas.</li>
+<li>Mesurer le temps d'exécution d'une partie de programme grâce à la fonction <code>time</code> du module <code>time</code>.</li>
+<li>Définir un tableau à deux dimensions.</li>
+<li>Utiliser la double indexation des éléments d'un tableau à deux dimensions pour accéder aux élements d'un tel tableau.</li>
+</ul>
 
 
 
